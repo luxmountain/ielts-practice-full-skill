@@ -1,0 +1,58 @@
+{
+  "book": 15,
+  "test": 1,
+  "title": "Cambridge IELTS 15 Reading Test 1",
+  "passages": [
+    {
+      "number": 1,
+      "title": "Nutmeg – a valuable spice",
+      "content": "The nutmeg tree, Myristica fragrans, is a large evergreen tree native to Southeast Asia. Until the late 18th century, it only grew in one place in the world: a small group of islands in the Banda Sea, part of the Moluccas – or Spice Islands – in northeastern Indonesia. The tree is thickly branched with dense foliage of tough, dark green oval leaves, and produces small, yellow, bell-shaped flowers and pale yellow pear-shaped fruits. The fruit is encased in a flesh husk. When the fruit is ripe, this husk splits into two halves along a ridge running the length of the fruit. Inside is a purple-brown shiny seed, 2-3 cm long by about 2 cm across, surrounded by a lacy red or crimson covering called an 'aril'. These are the sources of the two spices nutmeg and mace, the former being produced from the dried seed and the latter from the aril.\n\nNutmeg was a highly prized and costly ingredient in European cuisine in the Middle Ages, and was used as a flavouring, medicinal, and preservative agent. Throughout this period, the Arabs were the exclusive importers of the spice to Europe. They sold nutmeg for high prices to merchants based in Venice, but they never revealed the exact location of the source of this extremely valuable commodity.\n\nAlways in danger of competition from neighbouring Spain, the Portuguese began subcontracting their spice distribution to Dutch traders. In 1602, Dutch merchants founded the VOC, a trading corporation better known as the Dutch East India Company. By 1617, the VOC was the richest commercial operation in the world with 50,000 employees, a private army of 30,000 men and a fleet of 200 ships.\n\nAt the same time, thousands of people across Europe were dying of the plague. Doctors decided nutmeg held the cure. Everybody wanted nutmeg. Nutmeg bought for a few pennies in Indonesia could be sold for 68,000 times its original cost on the streets of London.\n\nIn 1621, the Dutch arrived and took over the Banda Islands. They concentrated all nutmeg production into easily guarded areas, destroying any trees outside the plantation zones. All exported nutmeg was covered with lime to prevent fertile seeds from leaving the islands.\n\nOne Banda Island called Run was under British control. In 1667, the Dutch offered a trade via the Treaty of Breda: Run for a distant island in North America. The British agreed. That island was Manhattan - how New Amsterdam became New York. The Dutch now had a monopoly over nutmeg.\n\nThen in 1770, a Frenchman named Pierre Poivre smuggled nutmeg plants to Mauritius. Some were later exported to the Caribbean. In 1778, a volcanic eruption caused a tsunami that wiped out half the nutmeg groves. In 1809, the British seized the Banda Islands and transplanted hundreds of nutmeg seedlings across southern Asia. The Dutch monopoly was over.",
+      "questions": [
+        {"id": 1, "answer": "oval", "type": "fill-in", "explanation": "The tree is thickly branched with dense foliage of tough, dark green oval leaves"},
+        {"id": 2, "answer": "husk", "type": "fill-in", "explanation": "The fruit is encased in a flesh husk. When the fruit is ripe, this husk splits into two halves"},
+        {"id": 3, "answer": "seed", "type": "fill-in", "explanation": "These are the sources of the two spices nutmeg and mace, the former being produced from the dried seed"},
+        {"id": 4, "answer": "mace", "type": "fill-in", "explanation": "the latter from the aril - mace is produced from the aril"},
+        {"id": 5, "answer": "FALSE", "type": "true-false-ng", "explanation": "They never revealed the exact location of the source - so Europeans did NOT know where it was grown"},
+        {"id": 6, "answer": "NOT GIVEN", "type": "true-false-ng", "explanation": "The text says VOC was the richest commercial operation but doesn't say it was the FIRST major trading company"},
+        {"id": 7, "answer": "TRUE", "type": "true-false-ng", "explanation": "After Treaty of Breda, the Dutch had a monopoly over the nutmeg trade - controlling all islands"},
+        {"id": 8, "answer": "Arabs", "type": "fill-in", "explanation": "Throughout this period, the Arabs were the exclusive importers of the spice to Europe"},
+        {"id": 9, "answer": "plague", "type": "fill-in", "explanation": "thousands of people across Europe were dying of the plague"},
+        {"id": 10, "answer": "lime", "type": "fill-in", "explanation": "All exported nutmeg was covered with lime to prevent fertile seeds from leaving"},
+        {"id": 11, "answer": "Run", "type": "fill-in", "explanation": "One Banda Island called Run was under British control"},
+        {"id": 12, "answer": "Mauritius", "type": "fill-in", "explanation": "Pierre Poivre smuggled nutmeg plants to Mauritius"},
+        {"id": 13, "answer": "tsunami", "type": "fill-in", "explanation": "a volcanic eruption caused a tsunami that wiped out half the nutmeg groves"}
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Driverless cars",
+      "content": "The concept of self-driving vehicles has moved from science fiction to near-reality. Several major technology and automotive companies are investing billions in developing autonomous vehicles that can navigate roads without human input. These vehicles use a combination of sensors, cameras, radar, and artificial intelligence to perceive their environment and make driving decisions.\n\nProponents argue that driverless cars could dramatically reduce road accidents, since the majority of crashes are caused by human error. They could also increase mobility for elderly and disabled people, reduce traffic congestion through more efficient driving patterns, and free up commuting time for productive activities.\n\nHowever, significant challenges remain. The technology must be able to handle unpredictable situations, adverse weather conditions, and complex urban environments. There are also legal and ethical questions about liability in the event of accidents, as well as concerns about job losses in the transportation sector.\n\nDespite these challenges, experts predict that autonomous vehicles will become commonplace within the next two decades, fundamentally transforming how we think about transportation and urban planning.",
+      "questions": [
+        {"id": 14, "answer": "C", "type": "matching", "text": "reference to the amount of time when a car is not in use", "explanation": ""},
+        {"id": 15, "answer": "B", "type": "matching", "text": "mention of several advantages of driverless vehicles for individual road-users", "explanation": ""},
+        {"id": 16, "answer": "E", "type": "matching", "text": "reference to the opportunity of choosing the most appropriate vehicle for each trip", "explanation": ""},
+        {"id": 17, "answer": "G", "type": "matching", "text": "an estimate of how long it will take to overcome a number of problems", "explanation": ""},
+        {"id": 18, "answer": "D", "type": "matching", "text": "a suggestion that driverless cars may have no effect on vehicle manufacturing numbers", "explanation": ""},
+        {"id": 19, "answer": "human", "type": "fill-in", "explanation": "most motor accidents are partly due to human error"},
+        {"id": 20, "answer": "car-sharing", "type": "fill-in", "explanation": ""},
+        {"id": 21, "answer": "ownership", "type": "fill-in", "explanation": "there could be a 43 percent drop in ownership of cars"},
+        {"id": 22, "answer": "mileage", "type": "fill-in", "explanation": ""}
+      ]
+    },
+    {
+      "number": 3,
+      "title": "What is exploration?",
+      "content": "We are all explorers. Our desire to discover, and then share that knowledge, is part of what makes us human. Long before recorded history, humans spread across the Earth, using their intelligence and courage to explore new territories and adapt to new environments.\n\nExploration has always been driven by a combination of curiosity, necessity, and the desire for resources. Ancient civilizations explored to find new trade routes, establish colonies, and expand their empires. In the modern era, exploration has taken on new dimensions - from the depths of the oceans to the vastness of space.\n\nToday, exploration continues in many forms. Scientists explore the microscopic world of genetics and quantum physics. Archaeologists uncover lost civilizations. Marine biologists dive to unprecedented depths. And space agencies plan missions to Mars and beyond.\n\nWhat unites all these endeavors is the fundamental human drive to understand our world and push beyond known boundaries. Exploration is not merely about reaching new places - it is about expanding human knowledge and capability.",
+      "questions": [
+        {"id": 33, "answer": "E", "type": "matching", "text": "", "explanation": ""},
+        {"id": 34, "answer": "A", "type": "matching", "text": "", "explanation": ""},
+        {"id": 35, "answer": "D", "type": "matching", "text": "", "explanation": ""},
+        {"id": 36, "answer": "B", "type": "matching", "text": "", "explanation": ""},
+        {"id": 37, "answer": "G", "type": "matching", "text": "", "explanation": ""},
+        {"id": 38, "answer": "expeditions", "type": "fill-in", "explanation": ""},
+        {"id": 39, "answer": "__(unavailable)__", "type": "fill-in", "explanation": ""},
+        {"id": 40, "answer": "__(unavailable)__", "type": "fill-in", "explanation": ""}
+      ]
+    }
+  ]
+}
