@@ -1,0 +1,268 @@
+{
+  "book": 15,
+  "test": 4,
+  "title": "Cambridge IELTS 15 Reading Test 4",
+  "passages": [
+    {
+      "number": 1,
+      "title": "the return of the huarango",
+      "content": "The south coast of Peru is a narrow, 2,000-kilometre-long strip of desert squeezed between the Andes and the Pacific Ocean. It is also one of the most fragile ecosystems on Earth. It hardly ever rains there, and the only year-round source of water is located tens of metres below the surface. This is why the huarango tree is so suited to life there: it has the longest roots of any tree in the world. They stretch down 50-80 metres and, as well as sucking up water for the tree, they bring it into the higher subsoil, creating a water source for other plant life.Dr David Beresford-Jones, archaeobotanist at Cambridge University, has been studying the role of the huarango tree in landscape change in the Lower lea Valley in southern Peru. He believes the huarango was key to the ancient people’s diet and, because it could reach deep water sources, it allowed local people to withstand years of drought when their other crops failed. But over the centuries huarango trees were gradually replaced with crops. Cutting down native woodland leads to erosion, as there is nothing to keep the soil in place. So when the huarangos go, the land turns into a desert. Nothing grows at all in the Lower lea Valley now.For centuries the huarango tree was vital to the people of the neighbouring Middle lea Valley too. They grew vegetables under it and ate products made from its seed pods. Its leaves and bark were used for herbal remedies, while its branches were used for charcoal for cooking and heating, and its trunk was used to build houses. But now it is disappearing rapidly. The majority of the huarango forests in the valley have already been cleared for fuel and agriculture – initially, these were smallholdings, but now they’re huge farms producing crops for the international market.‘Of the forests that were here 1,000 years ago, 99 per cent have already gone,’ says botanist Oliver Whaley from Kew Gardens in London, who, together with ethnobotanist Dr William Milliken, is rumiing a pioneering project to protect and restore the rapidly disappearing habitat. In order to succeed, Whaley needs to get the local people on board, and that has meant overcoming local prejudices. ‘Increasingly aspirational communities think that if you plant food trees in your home or street, it shows you are poor, and still need to grow your own food,’ he says. In order to stop the Middle lea Valley going the same way as the Lower lea Valley, Whaley is encouraging locals to love the huarangos again. ‘It’s a process of cultural resuscitation,’ he says. He has already set up a huarango festival to reinstate a sense of pride in their eco-heritage, and has helped local schoolchildren plant thousands of trees.‘In order to get people interested in habitat restoration, you need to plant a tree that is useful to them,’ says Whaley. So, he has been working with local families to attempt to create a sustainable income from the huarangos by turning their products into foodstuffs. ‘Boil up the beans and you get this thick brown syrup like molasses. You can also use it in drinks, soups or stews.’ The pods can be ground into flour to make cakes, and the seeds roasted into a sweet, chocolatey ‘coffee’. ‘It’s packed full of vitamins and minerals,’ Whaley says.And some farmers are already planting huarangos. Alberto Benevides, owner of lea Valley’s only certified organic farm, which Whaley helped set up, has been planting the tree for 13 years. He produces syrup and flour, and sells these products at an organic farmers’ market in Lima. His farm is relatively small and doesn’t yet provide him with enough to live on, but he hopes this will change. ‘The organic market is growing rapidly in Peru,’ Benevides says. ‘I am investing in the future.’But even if Whaley can convince the local people to fall in love with the huarango again, there is still the threat of the larger farms. Some of these cut across the forests and break up the corridors that allow the essential movement of mammals, birds and pollen up and down the narrow forest strip. In the hope of counteracting this, he’s persuading farmers to let him plant forest corridors on their land. He believes the extra woodland will also benefit the farms by reducing their water usage through a lowering of evaporation and providing a refuge for bio-control insects.‘If we can record biodiversity and see how it all works, then we’re in a good position to move on from there. Desert habitats can reduce down to very little,’ Whaley explains. ‘It’s not like a rainforest that needs to have this huge expanse. Life has always been confined to corridors and islands here. If you just have a few trees left, the population can grow up quickly because it’s used to exploiting water when it arrives.’ He sees his project as a model that has the potential to be rolled out across other arid areas around the world. ‘If we can do it here, in the most fragile system on Earth, then that’s a real message of hope for lots of places, including Africa, where there is drought and they just can’t afford to wait for rain.’",
+      "questions": [
+        {
+          "id": 1,
+          "answer": "Water",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 2,
+          "answer": "Diet",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 3,
+          "answer": "Drought",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 4,
+          "answer": "Erosion",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 5,
+          "answer": "Desert",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 6,
+          "answer": "(its/ huarango/ the) branches",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 7,
+          "answer": "leaves (and) bark",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 8,
+          "answer": "(its/ huarango/ the) trunk",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 9,
+          "answer": "Not given",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 10,
+          "answer": "False",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 11,
+          "answer": "True",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 12,
+          "answer": "False",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 13,
+          "answer": "Not given",
+          "type": "true-false-ng",
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "traditional uses of the huarango tree",
+      "content": "Part of treeTraditional use(6)……………………Fuel(7)……………………and…………………..Medicine(8)…………………….Construction",
+      "questions": [
+        {
+          "id": 14,
+          "answer": "Not given",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 15,
+          "answer": "False",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 16,
+          "answer": "True",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 17,
+          "answer": "False",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 18,
+          "answer": "False",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 19,
+          "answer": "True",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 20,
+          "answer": "Words",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 21,
+          "answer": "Finger",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 22,
+          "answer": "Direction",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 23,
+          "answer": "Commands",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 24,
+          "answer": "Fires",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 25,
+          "answer": "Technology",
+          "type": "fill-in",
+          "explanation": ""
+        },
+        {
+          "id": 26,
+          "answer": "Award",
+          "type": "fill-in",
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Silbo Gomero",
+      "content": "’ – from the Spanish word for ‘whistle’ – is now shedding light on the language-processing abilities of the human brain, according to scientists. Researchers say that Silbo activates parts of the brain normally associated with spoken language, suggesting that the brain is remarkably flexible in its ability to interpret sounds as language.‘Science has developed the idea of brain areas that are dedicated to language, and we are starting to understand the scope of signals that can be recognised as language,’ says David Corina, co-author of a recent study and associate professor of psychology at the University of Washington in Seattle.Silbo is a substitute for Spanish, with individual words recoded into whistles which have high- and low-frequency tones. A whistler – or silbador – puts a finger in his or her mouth to increase the whistle’s pitch, while the other hand can be cupped to adjust the direction of the sound. ‘There is much more ambiguity in the whistled signal than in the spoken signal,’ explains lead researcher Manuel Carreiras, psychology professor at the University of La Laguna on the Canary island of Tenerife. Because whistled ‘words’ can be hard to distinguish, silbadores rely on repetition, as well as awareness of context, to make themselves understood.The silbadores of Gomera are traditionally shepherds and other isolated mountain folk, and their novel means of staying in touch allows them to communicate over distances of up to 10 kilometres. Carreiras explains that silbadores are able to pass a surprising amount of information via their whistles. ‘In daily life they use whistles to communicate short commands, but any Spanish sentence could be whistled.’ Silbo has proved particularly useful when fires have occurred on the island and rapid communication across large areas has been vital.The study team used neuroimaging equipment to contrast the brain activity of silbadores while listening to whistled and spoken Spanish. Results showed the left temporal lobe of the brain, which is usually associated with spoken language, was engaged during the processing of Silbo. The researchers found that other key regions in the brain’s frontal lobe also responded to the whistles, including those activated in response to sign language among deaf people. When the experiments were repeated with non-whistlers, however, activation was observed in all areas of the brain.‘Our results provide more evidence about the flexibility of human capacity for language in a variety of forms,’ Gorina says. ‘These data suggest that left-hemisphere language regions are uniquely adapted for communicative purposes, independent of the modality of signal. The non- Silbo speakers were not recognising Silbo as a language. They had nothing to grab onto, so multiple areas of their brains were activated.’Carreiras says the origins of Silbo Gomero remain obscure, but that indigenous Canary Islanders, who were of North African origin, already had a whistled language when Spain conquered the volcanic islands in the 15th century Whistled languages survive-today in Papua New Guinea, Mexico, Vietnam, Guyana, China, Nepal, Senegal, and a few mountainous pockets in southern Europe. There are thought to be as many as 70 whistled languages still in use, though only 12 have been described and studied scientifically. This form of communication is an adaptation found among cultures where people are often isolated from each other, according to Julien Meyer, a researcher at the Institute of Human Sciences in Lyon, France. ‘They are mostly used in mountains or dense forests,’ he says. ‘Whistled languages are quite clearly defined and represent an original adaptation of the spoken language for the needs of isolated human groups.’But with modern communication technology now widely available, researchers say whistled languages like Silbo are threatened with extinction. With dwindling numbers of Gomera islanders still fluent in the language, Canaries’ authorities are taking steps to try to ensure its survival. Since 1999, Silbo Gomero has been taught in all of the island’s elementary schools. In addition, locals are seeking assistance from the United Nations Educational, Scientific and Cultural Organization (UNESCO). ‘The local authorities are trying to get an award from the organisation to declare (Silbo Gomero) as something that should be preserved for humanity,’ Carreiras adds.",
+      "questions": [
+        {
+          "id": 27,
+          "answer": "D",
+          "type": "multiple-choice",
+          "explanation": ""
+        },
+        {
+          "id": 28,
+          "answer": "E",
+          "type": "multiple-choice",
+          "explanation": ""
+        },
+        {
+          "id": 29,
+          "answer": "F",
+          "type": "multiple-choice",
+          "explanation": ""
+        },
+        {
+          "id": 30,
+          "answer": "H",
+          "type": "multiple-choice",
+          "explanation": ""
+        },
+        {
+          "id": 31,
+          "answer": "B",
+          "type": "multiple-choice",
+          "explanation": ""
+        },
+        {
+          "id": 32,
+          "answer": "C",
+          "type": "multiple-choice",
+          "explanation": ""
+        },
+        {
+          "id": 33,
+          "answer": "D",
+          "type": "multiple-choice",
+          "explanation": ""
+        },
+        {
+          "id": 34,
+          "answer": "B",
+          "type": "multiple-choice",
+          "explanation": ""
+        },
+        {
+          "id": 35,
+          "answer": "Yes",
+          "type": "yes-no-ng",
+          "explanation": ""
+        },
+        {
+          "id": 36,
+          "answer": "Not given",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 37,
+          "answer": "No",
+          "type": "yes-no-ng",
+          "explanation": ""
+        },
+        {
+          "id": 38,
+          "answer": "Yes",
+          "type": "yes-no-ng",
+          "explanation": ""
+        },
+        {
+          "id": 39,
+          "answer": "Not given",
+          "type": "true-false-ng",
+          "explanation": ""
+        },
+        {
+          "id": 40,
+          "answer": "D",
+          "type": "multiple-choice",
+          "explanation": ""
+        }
+      ]
+    }
+  ]
+}

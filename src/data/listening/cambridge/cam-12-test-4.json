@@ -1,0 +1,90 @@
+{
+  "type": "cambridge",
+  "book": 12,
+  "test": 4,
+  "title": "Cambridge IELTS 12 Listening Test 4",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10Complete the notes below. Write NO MORE THAN ONE WORD OR A NUMBER for each answer.Cycle tour leader: Applicant enquiryName: Margaret SmithAbout the applicant:• Wants a (1)  job• Will soon start work as a (2) • Has led cycle trips in (3) • Interested in being a leader of a cycling trip for families• Is currently doing voluntary work with members of a (4)  club• Available for five months from the 1st of (5) • Can’t eat (6) Contact details• Address: 27 (7)  Place, Dumfries• Postcode: (8) Interview:• Interview at 2.30 pm on (9) • Will plan a short (10)  about being a tour guide",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 14
+      },
+      "content": "Part 2: Questions 11-14Choose the correct letter A, B or C.Visiting the Sheepmarket Area11. Which is the most rapidly growing group of residents in the sheepmarket area? A. young professional people B. students from the university C. employees in the local market12. The speaker recommends the side streets in the sheepmarket for their A. international restaurants B. historical buildings C. arts and crafts13. Clothes designed by entrants for the Young Fashion competition must A. be modelled by the designers themselves B. be inspired by aspects of contemporary culture C. be made from locally produced materials14. Car parking is free in some car parks if you A. stay for less than an hour B. buy something in the shops C. park in the evenings or at weekendsQuestions 15-20Label the map below. Write correct letter A-I next to questions 15-20.<img decoding=\"async\" src=\"/wp-content/uploads/2024/09/lis-test92.png\" alt=\"\" />15. the Reynolds House 16. the Thumb 17. the Museum 18. the Contemporary Art Gallery 19. the Warner Gallery 20. Nucleus",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 3,
+      "questions": {
+        "from": 21,
+        "to": 24
+      },
+      "content": "Part 3: Questions 21-24Complete the table below. Write ONE WORD ONLY for each answer.Presentation of film adaptations of Shakespeare’s playStages of presentationWork still to be doneIntroduce Giannetti’s book containing a (21)……………of adaptationsorganize notesAsk class to suggest the (22)………………….adaptationsno further work neededPresent Rachel Malchow’s ideasprepare some (23)………………..Discuss relationship between adaptations and (24)…………………..at the time of making the filmno further work needed(21)                    (22) (23)                   (24) Questions 25-30What do the speakers say about each of the following films?Choose SIX answers from below and write the correct letter A-G next to questions 25-30.CommentsA clearly shows the historical periodB contains only parts of the playC is too similar to another kind of filmD turned out to be unpopular with audiencesE presents the play in a different period from the originalF sets the original in a different countryG incorporates a variety of art formsFilms25. Ran 26. Much Ado About Nothing 27. Romeo and Juliet 28. Hamlet 29. Prospero’s Books 30. Looking for Richard",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31-40Complete the notes below. Write ONE WORD ONLY for each answer.Noise in CitiesPast research focused on noise level (measured in decibels) and people’s responses.Noise ‘maps’• Show that the highest noise levels are usually found on roads• Do not show other sources of noise e.g. when windows are open or people’s neighbours are in their (31) • Ignore variations in people’s perceptions of noise• Have made people realize that the noise is a (32)  issue that must be dealt withProblems caused by noise• Sleep disturbance• Increase in amount of stress• Effect on the (33)  of school childrenDifferent types of noiseSome noises can be considered pleasant e.g. the sound of a (34)  in a townTo investigate this, researchers may use methods from (35)  sciencesWhat people wantPlenty of activity in urban environments which are (36)  but also allow people to relaxBut architects and town planners• Do not get much (37)  in acoustics• Regards sound as the responsibility of engineersUnderstanding sound as an art formWe need to know• How sound relates to (38) • What can be learnt from psychology about the effects of sound• Whether physics can help us understand the (39)  of soundVirtual reality programs• Advantage: predict the effect of buildings• Current disadvantage: they are (40)",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "temporary",
+    "2": "doctor",
+    "3": "africa",
+    "4": "youth",
+    "5": "May",
+    "6": "cheese",
+    "7": "Arbuthnot",
+    "8": "DG74PH",
+    "9": "tuesday",
+    "10": "talk",
+    "11": "A",
+    "12": "C",
+    "13": "B",
+    "14": "B",
+    "15": "H",
+    "16": "C",
+    "17": "F",
+    "18": "G",
+    "19": "I",
+    "20": "B",
+    "21": "classification",
+    "22": "worst",
+    "23": "slides",
+    "24": "issues",
+    "25": "F",
+    "26": "A",
+    "27": "E",
+    "28": "C",
+    "29": "G",
+    "30": "B",
+    "31": "gardens",
+    "32": "political",
+    "33": "work/ study",
+    "34": "fountain",
+    "35": "social",
+    "36": "lively",
+    "37": "training",
+    "38": "culture",
+    "39": "nature",
+    "40": "silent"
+  }
+}

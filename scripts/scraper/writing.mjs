@@ -17,15 +17,17 @@ const DELAY_MS = 2500;
 
 function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
 
-async function fetchPage(url) {
-  try {
-    const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", Accept: "text/html" }, redirect: "follow" });
-    if (!res.ok) return null;
-    return await res.text();
-  } catch (e) { console.error(`  Error: ${e.message}`); return null; }
+async function fetchPage(url, retries = 3) {
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36", Accept: "text/html" }, redirect: "follow", signal: AbortSignal.timeout(15000) });
+      if (res.status === 404) return null;
+      if (!res.ok) { if (attempt < retries) { console.log(`  ⟳ HTTP ${res.status}, retry ${attempt}/${retries}...`); await sleep(5000 * attempt); continue; } return null; }
+      return await res.text();
+    } catch (e) { if (attempt < retries) { console.log(`  ⟳ ${e.message}, retry ${attempt}/${retries}...`); await sleep(5000 * attempt); continue; } console.error(`  Error: ${e.message}`); return null; }
+  }
+  return null;
 }
-
-async function downloadImage(url, filepath) {
   try { const res = await fetch(url); if (!res.ok || !res.body) return false; await pipeline(res.body, createWriteStream(filepath)); return true; } catch { return false; }
 }
 

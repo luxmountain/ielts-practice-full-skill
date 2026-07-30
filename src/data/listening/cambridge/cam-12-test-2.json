@@ -1,0 +1,89 @@
+{
+  "type": "cambridge",
+  "book": 12,
+  "test": 2,
+  "title": "Cambridge IELTS 12 Listening Test 2",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10Complete the notes below. Write NO MORE THAN ONE WORD OR A NUMBER for each answer.Events during Kenton FestivalStart date: 16th MayOpening ceremony (first day)• In town centre, starting at (1) • The mayor will make a speck• A (2)  will perform• Performance of a (3)  about Hele Tungate (a (4)  )• Evening fireworks display situated across the (5) Other events• Videos about relationships that children have with their (6) • Venue: (7)  House• Performance of (8)  dances• Venue: the (9)  market in the town centre• Time: 2 and 5 pm every day except 1st day of festival• Several professional concerts and one by children• Venue: library• Time: 6.30 pm on the 18th• Tickets available online from festival box office and from shops which have the festival (10)  in their windows",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 15
+      },
+      "content": "Part 2: Questions 11-15Choose the correct letter A, B or C.Theatre trip to Munich11. When the group meet at the airport they will have A. breakfast B. coffee C. lunch12. The group will be met at Munich airport by A. an employee at the National Theatre B. a theatre manager C. a tour operator13. How much will they pay per night for a double room at the hotel? A. 110 euros B. 120 euros C. 150 euros14. What type of restaurant will they go to on Tuesday evening? A. an Italian restaurant B. a Lebanese restaurant C. a typical restaurant of the region15. Who will they meet on Wednesday afternoon? A. an actor B. a playwright C. a theatre directorQuestions 16-20What does the man say about the play on each of the following days? Choose FIVE answers from options given below.CommentsA The playwright will be presentB The play was written to celebrate an anniversaryC The play will be performed inside historic buildingD The play will be accompanies by live musicE The play will be performed outdoorsF The paly will be performed for the first timeG The performance will be attended by officials from the townDays16. Wednesday 17. Thursday 18. Friday 19. Saturday 20. Monday",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 3,
+      "questions": {
+        "from": 21,
+        "to": 25
+      },
+      "content": "Part 3: Questions 21-25Choose the correct letter A, B or C.Scandinavian Studies21. James chose to take Scandinavian Studies because when he was a child A. he was often taken to Denmark B. his mother spoke to him in Danish C. a number of Danish people visited his family22. When he graduates James would like to A. take a postgraduate course B. work in the media C. become a translator23. Which course will end this term? A. Swedish cinema B. Danish television programmes C. Scandinavian literature24. They agree that James’ literature paper this term will be on A. 19th century playwrights B. the Icelandic sagas C. modern Scandinavian novels25. Beth recommends that James’ paper should be A. a historical overview of the genre B. an in depth analysis of a single write C. a study of the social background to the literatureQuestions 26-30Complete the flow chart below.Choose FIVE answers from options given below and write correct letter A-G next to questions 26-30A bullet pointsB filmC notesD structureE student paperF textbookG documentaryHow James will write his paper on the Vikings• He’ll read a (26)  and choose his topic• He’ll borrow a (27)  from Beth• He’ll plan the (28)  of the paper• He’ll read some material and write (29) • He’ll write paper using (30)",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31-40Complete the notes below. Write ONE WORD ONLY for each answer.Conflict at workConflict mostly consists of behavior in the general category of (31) Often a result of people wanting to prove their (32) Also cause by differences in (33)  between people(34)  conflicts: people more concerned about own team than about companyConflict related stress can cause (35)  that may last for monthsChief Executives (CEOs)Many have both (36)  and anxietyMay not like to have their decisions questionedThere may be conflict between people who have different (37) Other managersA structure that is more (38)  may create a feeling of uncertainty about who staff should report toMinimizing conflictBosses need to try hard to gain (39) Someone from outside the company may be given the role of (40)  in order to resolve conflicts",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "2": "452. band",
+    "3": "play",
+    "4": "scientist",
+    "5": "river",
+    "6": "grandparents",
+    "7": "handsworth",
+    "8": "traditional",
+    "9": "outdoor",
+    "10": "logo",
+    "11": "B",
+    "12": "C",
+    "13": "A",
+    "14": "B",
+    "15": "C",
+    "16": "F",
+    "17": "B",
+    "18": "E",
+    "19": "G",
+    "20": "C",
+    "21": "C",
+    "22": "B",
+    "23": "C",
+    "24": "A",
+    "25": "C",
+    "26": "E",
+    "27": "G",
+    "28": "D",
+    "29": "C",
+    "30": "A",
+    "31": "bullying",
+    "32": "superiority",
+    "33": "personality",
+    "34": "structural",
+    "35": "absence",
+    "36": "confidence",
+    "37": "visions",
+    "38": "democratic",
+    "39": "respect",
+    "40": "mediator"
+  }
+}

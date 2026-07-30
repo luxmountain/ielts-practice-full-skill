@@ -16,7 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: `(function(){var t=localStorage.getItem('ielts-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}})();` }} />
+        <script dangerouslySetInnerHTML={{ __html: `(function(){var t=localStorage.getItem('ielts-theme');var c=document.documentElement.classList;if(t==='dark'){c.add('dark')}else if(t==='light'){c.add('light')}else if(window.matchMedia('(prefers-color-scheme:dark)').matches){c.add('dark')}})();` }} />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ProgressProvider>

@@ -1,0 +1,70 @@
+{
+  "type": "cambridge",
+  "book": 20,
+  "test": 4,
+  "title": "Cambridge IELTS 20 Listening Test 4",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10\nComplete the notes below. Write ONE WORD AND/ OR A NUMBER for each answer.Advice on family visit\nAccommodation\n• (1)  hotel on George Street\n• cost of family room per night: £ (2)  (approx.)Recommended trips\n• a (3)  tour of the city centre (starts in Carlton Square)\n• a trip by (4)  to the old fortScience Museum\n• best day to visit: (5) \n• see the exhibition about (6) , which opens soonFood\n• Clacton Market:\no good for (7) food\no need to have lunch before (8)  p.m.Theatre tickets\n• save up to (9)  % on ticket prices at bargaintickets.comFree activities\n• Blakewell Gardens:\n• Roots Music Festival\n• climb Telegraph Hill to see a view of the (10)  \n\n (adsbygoogle = window.adsbygoogle || []).push({});Part 2: Questions 11 and 12Choose TWO letters, A-E.\nWhich TWO things does the speaker say about visiting the football stadium with children?\n\nA Children can get their photo taken with a football player.\nB There is a competition for children today.\nC Parents must stay with their children at all times.\nD Children will need sunhats and drinks.\nE The cafe has a special offer on meals for children.Questions 13 and 14\nChoose TWO letters, A-E.\nWhich TWO features of the stadium tour are new this year?\n\nA VIP tour\nB 360 cinema experience\nC audio guide\nD dressing room tour\nE tours in other languagesQuestions 15 – 20\nWhich event in the history of football in the UK took place in each of the following years? Choose SIX answers from the box and write the correct letter, A- H, next to Questions 15- 20.Events in the history of football15. 1870 \n16. 1874 \n17. 1875 \n18. 1877 \n19. 1878 \n20. 1880 A The introduction of pay for the players\nB a change to the design of the goal\nC the first use of lights for matches\nD the Introduction of goalkeepers\nE the first International match\nF two changes to the rules of the game\nG the introduction of a fee for spectators\nH an agreement on the length of a game\n\n (adsbygoogle = window.adsbygoogle || []).push({});Part 3: Questions 21 and 22Choose TWO letters, A-E.\nWhich TWO benefits for children of learning to write did both students find surprising?A improved fine motor skills\nB improved memory\nC improved concentration\nD improved imagination\nE improved spatial awarenessQuestions 23 and 24\nChoose TWO letters, A-E.\nFor children with dyspraxia, which TWO problems with handwriting do the students think are easiest to correct?A not spacing letters correctly\nB not writing in a straight line\nC applying too much pressure when writing\nD confusing letter shapes\nE writing very slowlyQuestions 25-30\nChoose the correct letter, A, B or C.Teaching handwriting25. What does the woman say about using laptops to teach writing to children with dyslexia?\nA Children often lack motivation to learn that way.\nB Children become fluent relatively quickly.\nC Children react more positively if they make a mistake.\n\n26. When discussing whether to teach cursive or print writing, the woman thinks that\nA cursive writing disadvantages a certain group of children.\nB print writing is associated with lower academic performance.\nC most teachers in the UK prefer a traditional approach to handwriting.27. According to the students, what impact does poor handwriting have on exam performance?\nA There is evidence to suggest grades are affected by poor handwriting.\nB Neat handwriting is less important now than it used to be.\nC Candidates write more slowly and produce shorter answers.28. What prediction does the man make about the future of handwriting?\nA Touch typing will be taught before writing by hand.\nB Children will continue to learn to write by hand.\nC People will dislike handwriting on digital devices.29. The woman is concerned that relying on digital devices has made it difficult for her to\nA take detailed notes.\nB spell and punctuate.\nC read old documents.30. How do the students feel about their own handwriting?\nA concerned they are unable to write quickly\nB embarrassed by comments made about it\nC regretful that they have lost the habit",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31 – 40\nComplete the notes below. Write ONE WORD ONLY for each answer.Research in the area around the Chembe Bird SanctuaryThe importance of birds of prey to the local communities\n• They destroy (31)  and other rodents.\n• They help to prevent farmers from being bitten by (32) \n• They have been an important part of the local culture for many years.\n• They now support the economy by encouraging (33)  in the area.Falling numbers of birds of prey\n• The birds may be accidentally killed\no By (34)  when they are hunting or sleeping\no by electrocution from contact with power lines, especially at times when there is a lot of (35) \n• Local farmers may illegally shoot them or (36)  them.Ways of protecting chickens from birds of prey\n• clearing away vegetation from the area (unhelpful)\n• providing a (37)  for chickens (expensive)\n• frightening birds of prey by\no keeping a (38)\no making a (39) \no e.g. with metal objects\n• A (40)  of methods is usually most effective.\n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "King’s/ Kings",
+    "2": "125",
+    "3": "Walking",
+    "4": "Boat",
+    "5": "Tuesday",
+    "6": "Space",
+    "7": "Vegetarian",
+    "8": "2.30/ two-thirty",
+    "9": "75/ seventy-five",
+    "10": "Port",
+    "11": "B, C",
+    "12": "B, C",
+    "13": "A, C",
+    "14": "A, C",
+    "15": "D",
+    "16": "F",
+    "17": "B",
+    "18": "H",
+    "19": "C",
+    "20": "G",
+    "21": "C, E",
+    "22": "C, E",
+    "23": "A, C",
+    "24": "A, C",
+    "25": "C",
+    "26": "A",
+    "27": "A",
+    "28": "B",
+    "29": "B",
+    "30": "C",
+    "31": "Rats",
+    "32": "Snakes",
+    "33": "Tourism",
+    "34": "Traffic",
+    "35": "Rain",
+    "36": "Poison",
+    "37": "Building",
+    "38": "Dog",
+    "39": "Noise",
+    "40": "Combination"
+  }
+}

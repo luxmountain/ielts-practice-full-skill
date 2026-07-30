@@ -1,0 +1,70 @@
+{
+  "type": "cambridge",
+  "book": 16,
+  "test": 1,
+  "title": "Cambridge IELTS 16 Listening Test 1",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10Complete the notes below. Write ONE WORD AND/ OR A NUMBER for each answer.JUNIOR CYCLE CAMPThe course focuses on skills and safety.• Charlie would be placed in Level 5.• First of all, children at this level are taken to practise in a (1) Instructors• Instructors wear (2)  shirts.• A (3)  is required and training is given.Classes• The size of the classes is limited.• There are quiet times during the morning for a (4)  or a game.• Classes are held even if there is (5) What to bring• a change of clothing• a (6) • shoes (not sandals)• Charlie’s (7) Day 1• Charlie should arrive at 9.20 am on the first day.• Before the class, his (8)  will be checked.• He should then go to the (9)  to meet his class instructor.Cost• The course costs (10) $  per week.Part 2: Questions 11 and 12Choose TWO letters, A-E.According to Megan, what are the TWO main advantages of working in the agriculture and horticulture sectors? A the active lifestyle B the above-average salaries C the flexible working opportunities D the opportunities for overseas travel E the chance to be in a natural environmentQuestions 13 and 14Choose TWO letters, A-E.Which TWO of the following are likely to be disadvantages for people working outdoors? A the increasing risk of accidents B being in a very quiet location C difficult weather conditions at times D the cost of housing E the level of physical fitness requiredQuestions 15-20What information does Megan give about each of the following job opportunities?Choose SIX answers from the box and write the correct letter, A-H, next to Questions 15-20.InformationA not a permanent jobB involves leading a teamC experience not essentialD intensive work but also funE chance to earn more through overtimeF chance for rapid promotionG accommodation availableH local travel involvedJob opportunities15. Fresh food commercial manager 16. Agronomist 17. Fresh produce buyer 18. Garden centre sales manager 19. Tree technician 20. Farm worker Part 3: Questions 21 and 22Choose TWO letters, A-E.Which TWO points does Adam make about his experiment on artificial sweeteners? A The results were what he had predicted. B The experiment was simple to set up. C A large sample of people was tested. D The subjects were unaware of what they were drinking. E The test was repeated several times for each person.Questions 23 and 24Choose TWO letters, A-E.Which TWO problems did Rosie have when measuring the fat content of nuts? A She used the wrong sort of nuts. B She used an unsuitable chemical. C She did not grind the nuts finely enough. D The information on the nut package was incorrect. E The weighing scales may have been unsuitable.Questions 25-30Choose the correct letter, A, B or C.25. Adam suggests that restaurants could reduce obesity if their menus A offered fewer options. B had more low-calorie foods. C were organised in a particular way.26. The students agree that food manufacturers deliberately A make calorie counts hard to understand. B fail to provide accurate calorie counts. C use ineffective methods to reduce calories.27. What does Rosie say about levels of exercise in England? A The amount recommended is much too low. B Most people overestimate how much they do. C Women now exercise more than they used to.28. Adam refers to the location and width of stairs in a train station to illustrate A practical changes that can influence people’s behaviour. B methods of helping people who have mobility problems. C ways of preventing accidents by controlling crowd movement.29. What do the students agree about including reference to exercise in their presentation? A They should probably leave it out. B They need to do more research on it. C They should discuss this with their tutor.30. What are the students going to do next for their presentation? A prepare some slides for it B find out how long they have for it C decide on its content and organisation",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31-40Complete the notes below. Write ONE WORD ONLY for each answer.Hand knittingInterest in knitting• Knitting has a long history around the world.• We imagine someone like a (31)  knitting.• A (32)  ago, knitting was expected to disappear.• The number of knitting classes is now increasing.• People are buying more (33)  for knitting nowadays.Benefits of knitting• gives support in times of (34)  difficulty• requires only (35)  skills and little money to start• reduces stress in a busy lifeEarly knitting• The origins are not known.• Findings show early knitted items to be (36)  in shape.• The first needles were made of natural materials such as wood and (37) • Early yarns felt (38)  to touch.• Wool became the most popular yarn for spinning.• Geographical areas had their own (39)  of knitting.• Everyday tasks like looking after (40)  were done while knitting.",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "Park",
+    "2": "Blue",
+    "3": "Reference",
+    "4": "Story",
+    "5": "Rain",
+    "6": "Snack",
+    "7": "Medication",
+    "8": "Helmet",
+    "9": "Tent",
+    "10": "199",
+    "11": "A, C",
+    "12": "A, C",
+    "13": "B, C",
+    "14": "B, C",
+    "15": "D",
+    "16": "F",
+    "17": "A",
+    "18": "H",
+    "19": "C",
+    "20": "G",
+    "21": "C, D",
+    "22": "C, D",
+    "23": "C, E",
+    "24": "C, E",
+    "25": "C",
+    "26": "A",
+    "27": "B",
+    "28": "A",
+    "29": "A",
+    "30": "C",
+    "31": "Grandmother",
+    "32": "Decade",
+    "33": "Equipment",
+    "34": "Economic",
+    "35": "Basic",
+    "36": "Round",
+    "37": "Bone",
+    "38": "Rough",
+    "39": "Style",
+    "40": "Sheep"
+  }
+}

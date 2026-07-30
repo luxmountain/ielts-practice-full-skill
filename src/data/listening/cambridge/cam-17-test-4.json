@@ -1,0 +1,80 @@
+{
+  "type": "cambridge",
+  "book": 17,
+  "test": 4,
+  "title": "Cambridge IELTS 17 Listening Test 4",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10Complete the notes below. Write ONE WORD AND/ OR A NUMBER for each answer.Easy life cleaning servicesBasic cleaning package offered• Cleaning all surfaces• Cleaning the (1)  throughout the apartment• Cleaning shower, sinks toilets etc.Additional service agreed• Every weeko Cleaning the (2) o Ironing clothes – (3)  only• Every montho Cleaning all the (4)  from the insideo Washing down the (5) Other possibilities• They can organise a plumber or an (6)  if necessary• A special cleaning service is available for customers who are allergic to (7) Information on the cleaners• Before being hired, all cleaners have a background check carried out by the (8) • References are required• All cleaners are given (9)  for two weeks• Customers send a (10)  after each visit",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 14
+      },
+      "content": "Part 2: Questions 11-14Choose the correct letter, A, B or C.11. Many hotel managers are unaware that their staff often A a lack of training. B long hours. C low pay.12. What is the impact of high staff turnover on managers? A an increased workload B low morale C an inability to meet targets13. What mistake should managers always avoid? A failing to treat staff equally B reorganising shifts without warning C neglecting to have enough staff during busy periods14. What unexpected benefit did Dunwich hotel notice after improving staff retention rates? A a fall in customer complaints B an increase in loyalty club membership C a rise in spending per customerQuestions 15-20Which way of reducing staff turnover was used in each of the following hotels? Write the correct letter, A, B or C, next to Questions 15-20.Ways of reducing staff turnoverA improving relationships and teamworkB offering incentives and financial benefitsC providing career opportunitiesHotels15. The Sun Club 16. The Portland 17. Bluewater Hotels 18. Pentlow Hotels 19. Green Planet 20. The Amesbury Part 3: Questions 21 and 22Choose TWO letters, A-E.Which TWO points do Thomas and Jeanne make about Thomas’s sporting activities at school? A He should have felt more positive about them. B The training was too challenging for him. C He could have worked harder at them. D His parents were disappointed in him. E His fellow students admired him.Questions 23 and 24Choose TWO letters, A-E.Which TWO feelings did Thomas experience when he was in Kenya? A disbelief B relief C stress D gratitude E homesicknessQuestions 25-30What comment do the students make about the development of each of the following items of sporting equipment? Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.Comments about the development of the equipmentA It could cause excessive sweating.B The material was being mass produced for another purpose.C People often needed to make their own.D It often had to be replaced.E The material was expensive.F It was unpopular among spectators.G It caused injuries.H No one using it liked it at first.Items of sporting equipment25. the table tennis bat 26. the cricket helmet 27. the cycle helmet 28. the golf club 29. the hockey stick 30. the football",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31-40Complete the notes below. Write ONE WORD ONLY for each answer.Maple SyrupWhat is maple syrup• Made from the sap of the maple tree• Color described as (31) • Added to food or used in cooking• Very (32)  compared to refined sugarThe maple tree• Has many species• Needs sunny days and cool nights• Best growing conditions and (33)  are in Canada and North AmericaEarly maple sugar producers• Made holes in tree trunks• Used hot (34)  to heat the sapToday’s maple syrup• The treeso Tree trunks may not have the correct (35)  until they have been growing for 40 years• The productiono A tap is drilled into the trunk and a (36)  carries the sap into a bucketo Large pens of sap called evaporators are heated by means of a (37) o A lot of (38)  is produced during the evaporation processo Sugar sand is removed because it makes the syrup look (39)  and affects the tasteo A huge quantity of sap is needed to make a (40)  of maple syrup",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "Floor(s)",
+    "2": "Fridge",
+    "3": "Shirts",
+    "4": "Windows",
+    "5": "Balcony",
+    "6": "Electrician",
+    "7": "Dust",
+    "8": "Police",
+    "9": "Training",
+    "10": "Review",
+    "11": "A",
+    "12": "A",
+    "13": "A",
+    "14": "C",
+    "15": "A",
+    "16": "C",
+    "17": "B",
+    "18": "C",
+    "19": "B",
+    "20": "A",
+    "21": "C or E",
+    "22": "C or E",
+    "23": "A or D",
+    "24": "A or D",
+    "25": "B",
+    "26": "F",
+    "27": "A",
+    "28": "D",
+    "29": "C",
+    "30": "G",
+    "31": "Golden",
+    "32": "Healthy",
+    "33": "Climate",
+    "34": "Rock(s)",
+    "35": "Diameter",
+    "36": "Tube",
+    "37": "Fire",
+    "38": "Stream",
+    "39": "Cloudy",
+    "40": "Litre/ liter"
+  }
+}

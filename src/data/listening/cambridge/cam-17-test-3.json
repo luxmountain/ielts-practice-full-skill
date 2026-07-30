@@ -1,0 +1,80 @@
+{
+  "type": "cambridge",
+  "book": 17,
+  "test": 3,
+  "title": "Cambridge IELTS 17 Listening Test 3",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 7
+      },
+      "content": "Part 1: Questions 1-7Complete the notes below. Write ONE WORD AND/ OR A NUMBER for each answer.Advice on surfing holidaysJack’s advice• Recommends surfing for (1)   holidays in summer• Need to be quite (2) Irish surfing locations• County Clareo Lahinch has some good quality (3)  and surf schoolso There are famous cliffs nearby• County Mayoo Good surf school at (4)  beacho Surf camp lasts for one (5) o Can also explore the local (6)  by kayakWeather• Best month to go (7) • Average temperature in summer – approx. (8)   degreesCosts• Equipmento Wetsuit and surfboard – (9)  euros per dayo Also available to hire (10)  for warmthPart 2: Questions 11 and 12Choose TWO letters, A-E.Which TWO facts are given about the school’s extended hours childcare service? A It started recently. B More children attend after school than before school. C An average of 50 children attend in the mornings. D A child cannot attend both the before and after school sessions. E The maximum number of children who can attend is 70.Questions 13-15Choose the correct letter, A, B or C.13. How much does childcare cost for a complete afternoon session per child? A £3.50 B £5.70 C £7.2014. What does the manager say about food? A Children with allergies should bring their own food. B Children may bring healthy snacks with them. C Children are given a proper meal at 5 p.m.15. What is different abo t arrangements in the school holidays? A Children from other schools can attend. B Older children can attend. C A greater number of children can attend.Questions 16-20What information is given about each of the following activities on offer? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.InformationA has limited availabilityB is no longer availableC is for over 8s onlyD requires help from parentsE involves an additional feeF is a new activityG was requested by childrenActivities16. Spanish 17. Music 18. Painting 19. Yoga 20. Cooking",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 3,
+      "questions": {
+        "from": 21,
+        "to": 24
+      },
+      "content": "Part 3: Questions 21-24Choose the correct letter, A, B or C.Holly’s Work Placement Tutorial21. Holly has chosen the Orion Stadium placement because A it involves children. B it is outdoors. C it sounds like fun.22. Which aspect of safety does Dr Green emphasise most? A ensuring children stay in the stadium B checking the equipment children will use C removing obstacles in changing rooms23. What does Dr Green say about the spectators? A They can be hard to manage. B They make useful volunteers. C They shouldn’t take photographs.24. What has affected the schedule in the past? A bad weather B an injury C extra timeQuestions 25-30What do Holly and her tutor agree is an important aspect of each of the following events management skills?Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.Important AspectsA being flexibleB focusing on detailsC having a smart appearanceD hiding your emotionsE relying on expertsF trusting your own viewsG doing one thing at a timeH thinking of the futureEvents management skills25. Communication 26. Organisation 27. Time management 28. Creativity 29. Leadership 30. Networking",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31-40Complete the notes below. Write ONE WORD ONLY for each answer.Bird Migration TheoryMost birds are believed to migrate seasonally.Hibernation theory• It was believed that birds hibernated underwater or buried themselves in (31) • This theory was later disproved by experiments on caged birds.Transmutation theory• Aristotle believed birds changed from one species into another in summer and winter.– In autumn he observed that redstart’s experience the loss of (32)  and thought that they turned into robins.– Aristotle’s assumptions were logical because the two species of birds had a similar (33) 17th century• Charles Morton popularised the idea that birds fly to the (34)  in winter.Scientific developments• In 1822, a stork was killed in Germany which had an African spear in its (35) – previously there had been no (36)  that storks migrate to Africa• Little was known about the (37)  and journeys of migrating birds until the practice of ringing was established.– It was thought large birds carried small birds on some journeys because they were considered incapable of travelling across huge (38) – Ringing depended on what is called the (39)  of dead birds.• In 1931, the first (40)  to show the migration of European birds was printed.",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "Family",
+    "2": "Fits",
+    "3": "Hotels",
+    "4": "Carrowniskey",
+    "5": "Week",
+    "6": "Bay",
+    "7": "September",
+    "8": "19/ nineteen",
+    "9": "30/ thirty",
+    "10": "Boots",
+    "11": "B or E",
+    "12": "B or E",
+    "13": "C",
+    "14": "C",
+    "15": "A",
+    "16": "E",
+    "17": "D",
+    "18": "G",
+    "19": "F",
+    "20": "C",
+    "21": "B",
+    "22": "A",
+    "23": "A",
+    "24": "B",
+    "25": "C",
+    "26": "A",
+    "27": "D",
+    "28": "B",
+    "29": "F",
+    "30": "H",
+    "31": "Mud",
+    "32": "Feathers",
+    "33": "Shape",
+    "34": "Moon",
+    "35": "Neck",
+    "36": "Evidence",
+    "37": "Destinations",
+    "38": "Oceans",
+    "39": "Recovery",
+    "40": "Atlas"
+  }
+}

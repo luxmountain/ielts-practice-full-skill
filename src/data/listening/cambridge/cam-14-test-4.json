@@ -1,0 +1,90 @@
+{
+  "type": "cambridge",
+  "book": 14,
+  "test": 4,
+  "title": "Cambridge IELTS 14 Listening Test 4",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 7
+      },
+      "content": "Part 1: Questions 1 – 7Complete the notes below. Write ONE WORD AND/ OR A NUMBER for each answer.Enquiry about booking hotel room for eventAndrew is the Events ManagerRoomsAdelphi Room– number of people who can sit down to eat: (1) – has a gallery suitable for musicians– can go out and see the (2)  in pots on the terrace– terrace has a view of a group of (3) Carlton Room– number of people who can sit down to eat: 110– has a (4) – view of the lakeOptionsMaster of Ceremonies:– can give a (5)  while people are eating– will provide (6)  if there are any problemsAccommodation: in hotel rooms or (7) Questions 8 – 10What is said about using each of the following hotel facilities?Choose THREE answers from the box and write the correct letter, A, B or C, next to Questions 8-10.AvailabilityA included in cost of hiring roomB available at extra chargeC not availableHotel facilities8. outdoor swimming pool 9. gym 10. tennis courts",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 16
+      },
+      "content": "Part 2: Questions 11-16What information does the speaker give about each of the following excursions?Choose SIX answers from the box and write the correct letter, A-H, next to Questions 11-16.InformationA all downhillB suitable for beginnersC only in good weatherD food includedE no chargeF swimming possibleG fully booked todayH transport not includedExcursions11. dolphin watching 12. forest walk 13. cycle trip 14. local craft tour 15. observatory trip 16. horse riding Questions 17 and 18Choose TWO letters A-E.Which TWO things does the speaker say about the attraction called Musical Favourites? A You pay extra for drinks. B You must book it in advance. C You get a reduction if you buy two tickets. D You can meet the performers. E You can take part in the show.Questions 19 and 20Choose TWO letters, A-E.Which TWO things does the speaker say about the Castle Feast? A Visitors can dance after the meal. B There is a choice of food. C Visitors wear historical costume. D Knives and forks are not used. E The entertainment includes horse races.",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 3,
+      "questions": {
+        "from": 21,
+        "to": 25
+      },
+      "content": "Part 3: Questions 21 – 25Choose the correct letter A, B or C.21 What does Trevor find interesting about the purpose of children’s literature? A the fact that authors may not realise what values they’re teaching B the fact that literature can be entertaining and educational at the same time C the fact that adults expect children to imitate characters in literature22 Trevor says the module about the purpose of children’s literature made him A analyse some of the stories that his niece reads. B wonder how far popularity reflects good quality. C decide to start writing some children’s stories.23 Stephanie is interested in the Pictures module because A she intends to become an illustrator. B she can remember beautiful illustrations from her childhood. C she believes illustrations are more important than words.24 Trevor and Stephanie agree that comics A are inferior to books. B have the potential for being useful. C discourage children from using their imagination.25 With regard to books aimed at only boys or only girls, Trevor was surprised A how long the distinction had gone unquestioned. B how few books were aimed at both girls and boys. C how many children enjoyed books intended for the opposite sex.Questions 26 – 30What comment is made about each of these stories?Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 26-30.CommentsA translated into many other languagesB hard to readC inspired a work in a different area of artD more popular than the author’s other worksE original title refers to another bookF started a new genreG unlikely topicStories26. Perrault’s fairy tales 27. The Swiss Family Robinson 28. The Nutcracker and The Mouse King 29. The Lord of the Rings 30. War Horse",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31 – 40Complete the notes below. Write ONE WORD ONLY for each answer.The hunt for sunken settlements and ancient shipwrecksATLIT-YAM• was a village on coast of eastern Mediterranean• thrived until about 7,000 BC• stone homes had a courtyard• had a semicircle of large stones round a (31) • cause of destruction unknown – now under the sea• biggest settlement from the prehistoric period found on the seabed• research carried out into structures, (32)  and human remainsTRADITIONAL AUTONOMOUS UNDERWATER VEHICLES (AUVs)• used in the oil industry, e.g. to make (33) • problems: they were expensive and (34) LATEST AUVs• much easier to use, relatively cheap, sophisticatedTests:• Marzamemi, Sicily: found ancient Roman ships carrying architectural elements made of(35) Underwater internet:• (36)  is used for short distance communication, acoustic waves for long distance• plans for communication with researchers by satellite• AUV can send data to another AUV that has better (37)  , for examplePlanned research in Gulf of Baratti:• to find out more about wrecks of ancient Roman ships, including– one carrying (38)  supplies; tablets may have been used for cleaning the (39) – others carrying containers of olive oil or (40)",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "85",
+    "2": "roses",
+    "3": "trees",
+    "4": "stage",
+    "5": "speech",
+    "6": "support",
+    "7": "cabins",
+    "8": "C",
+    "9": "A",
+    "10": "B",
+    "11": "G",
+    "12": "D",
+    "13": "A",
+    "14": "E",
+    "15": "F",
+    "16": "B",
+    "17": "B",
+    "18": "D (in any order)",
+    "19": "A",
+    "20": "D (in any order)",
+    "21": "A",
+    "22": "C",
+    "23": "A",
+    "24": "B",
+    "25": "B",
+    "26": "F",
+    "27": "E",
+    "28": "C",
+    "29": "B",
+    "30": "G",
+    "31": "spring",
+    "32": "tools",
+    "33": "maps",
+    "34": "heavy",
+    "35": "marble",
+    "36": "light",
+    "37": "cameras",
+    "38": "medical",
+    "39": "eyes",
+    "40": "wine"
+  }
+}

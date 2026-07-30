@@ -1,0 +1,80 @@
+{
+  "type": "cambridge",
+  "book": 21,
+  "test": 1,
+  "title": "Cambridge IELTS 21 Listening Test 1",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 6
+      },
+      "content": "Part 1: Questions 1-6\nComplete the table below. Write ONE WORD AND/ OR A NUMBER for each answer.Oyster Bay Sailing Club CoursesName of courseWhat you learnCostOther informationTaster dayintroduction to sailing£120 if booking one placesmall groups (max(1) people)Level 1basic theory e.g. understanding the(2) and tidesbasic sailing skillsincluding (3) information£200(4) availablefor club membersall inclusive (plus a useful (5)  )a (6) atthe end of the course for all participantsQuestions 7-10\nComplete the notes below. Write ONE WORD ONLY for each answer.General information• Participants must be able to swim.\n• Bring suitable clothing, a (7)  and toiletries (e.g. shampoo).\n• There is a (8)  at the club.\n• Online training (9)  are recommended.\n• (10)  are available for course participants. \n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 16
+      },
+      "content": "Part 2: Questions 11-16\nChoose the correct letter, A, B or C.Working as makeup trainee11. What should trainees always expect to get when working on low budget short films?\nA travel expenses\nB a minimum wage\nC meals12. According to the speaker, on big budget films trainees may get experience of\nA makeup for special effects.\nB working with different ethnicities.\nC creating a variety of hair styles.13. The speaker says a problem for makeup artists is\nA dealing with difficult directors.\nB being shouted at by their supervisor.\nC waiting around for hours doing nothing.14. How did the speaker feel when she met famous actors for the first time?\nA very shy\nB very proud\nC very disappointed15. What advice does the speaker give about makeup kits?\nA Always carry a basic kit with you.\nB Only buy the best products for a makeup kit.\nC Ask other makeup artists to check your kit.16. What advice does the speaker give about creating a portfolio?\nA Keep print and digital photos.\nB Only include a small selection of photos.\nC Get permission to use photos.Questions 17-20\nWhat ability is required for each of the following duties? Write the correct letter, A, B, or C, next to Questions 17-20.A being well-organised\nB being flexible\nC working quicklyDuties\n17. Prepping an actor \n18. Continuity \n19. General \n20. Applying makeup \n\n (adsbygoogle = window.adsbygoogle || []).push({});Part 3: Questions 21 and 22\nChoose TWO letters, A-E.Which TWO features of the lecture on ocean biodiversity had the greatest impact on the students?A the references to local problems\nB the broad focus of the examples\nC the practical suggestions for solutions\nD the type of issues discussed\nE the implications for government policyQuestions 23 and 24\nChoose TWO letters, A-E.Which TWO details about the research project particularly impressed the students?A the team’s previous successes\nB its wide geographical scale\nC the use of new technology\nD the extensive statistical evidence\nE the large range of specialists involvedQuestions 25-30\nWhat is the students’ opinion of each of the following resources related to ocean biodiversity? Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.Opinions\nA This is aimed at a very specialist audience.\nB This is now rather outdated.\nC This was an effective description of a new danger.\nD This suggests possible ways to improve the situation.\nE This does not give a balanced account.\nF This is too predictable to be useful.\nG This gives insufficient evidence for its claims.\nH This gives a clear explanation of the problems.Resources\n25. Article on invasive lionfish \n26. Documentary on microplastics \n27. Podcast on ocean pollution \n28. Book on coastal ecosystems \n29. Article on metal toxicity \n30. Podcast on floating marine cities \n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31 – 40\nComplete the notes below. Write ONE WORD ONLY for each answer.Sources of rubber\nThree resources which are essential for industrial civilisation\n• (31) \n• fossil fuels\n• rubberNatural rubber\nThis mainly comes from the Para rubber tree, now cultivated in South-East Asia. The supply is limited because\n• the growth of the tree is (32)\n• production cannot easily be adjusted because of increasing or decreasing (33)\n• the tree only grows near the (34)\n• extracting the latex (rubber) is labour-intensive\n• it is very difficult to (35)  rubber after production.New threats include\n• lack of genetic diversity, leading to danger of disease caused by a (36)\n• a shift to the cultivation of palm oil\n• extreme (37)  events.Synthetic rubber\n• may be used for engine parts and cooking utensils\n• is less (38)  than natural rubber\n• is unsuitable for many purposes e.g. the tyres of aircraft.An alternative source of natural rubber\n• A wild flower (a type of dandelion) has rubber in its (39) \n• It can be grown in many locations and does not require good (40)  \n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "10/ ten",
+    "2": "Weather",
+    "3": "Safety",
+    "4": "Discount",
+    "5": "Dictionary",
+    "6": "Certificate",
+    "7": "Towel",
+    "8": "Café",
+    "9": "Videos",
+    "10": "Lockers",
+    "11": "A",
+    "12": "B",
+    "13": "A",
+    "14": "A",
+    "15": "A",
+    "16": "C",
+    "17": "C",
+    "18": "A",
+    "19": "B",
+    "20": "C",
+    "21": "B, D",
+    "22": "B, D",
+    "23": "C, E",
+    "24": "C, E",
+    "25": "G",
+    "26": "B",
+    "27": "F",
+    "28": "H",
+    "29": "A",
+    "30": "E",
+    "31": "Metal(s)",
+    "32": "Slow",
+    "33": "Demand",
+    "34": "Equator",
+    "35": "Recycle",
+    "36": "Fungus",
+    "37": "Weather",
+    "38": "Strong",
+    "39": "Roots",
+    "40": "Soil"
+  }
+}

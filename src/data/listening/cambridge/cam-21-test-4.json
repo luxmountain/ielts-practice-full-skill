@@ -1,0 +1,80 @@
+{
+  "type": "cambridge",
+  "book": 21,
+  "test": 4,
+  "title": "Cambridge IELTS 21 Listening Test 4",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10\nComplete the notes below. Write ONE WORD AND/ OR A NUMBER for each answer.Survey about shopping in Broadbeach\nName: Martyn (1) \nToday’s journey to Broadbeach town centre: used his (2) \nPurpose of today’s trip:\n• Has visited the (3) \n• Looking for a new (4) \n• Collecting (5)  (after repair)\nPreferred day for shopping: (6) Opinions about shopping in the town centre\n• Finds the service in shops is excellent\n• Thinks there are too many places selling (7)\n• Would like more places to buy (8) Opinions about new out-of-town Shopping Centre\n• Likes the (9)  best\n• Believes the (10)  is unnecessary\n\n (adsbygoogle = window.adsbygoogle || []).push({});Part 2: Questions 11 and 12\nChoose TWO letters, A-E.In which TWO areas of the business exhibition did James Craig promote his company last year?A the Digital Marketing Centre\nB the TalkCon Zone\nC the Breakout area\nD the Business Village\nE the Business Connections ZoneQuestions 13 and 14\nChoose TWO letters, A-E.Which TWO facts are given about discounts on popular brands available to exhibitors?A They are available to all members of exhibiting companies.\nB They can be used for both food and clothing.\nC They only apply if people spend at least £400.\nD They can be used by family members.\nE The percentage saved is always the same. Questions 15 and 16\nWhich topic will each of the following speakers focus on? Choose SIX answers from the box and write the correct letter, A-G, next to Questions 15-20.Topics\nA Supporting job seekers\nB Dealing with personal problems\nC Effects of an unexpectedly rapid expansion\nD A global range of business experiences\nE Coping with financial set-backs\nF Developing a company in response to changing markets\nG Combining business success with contributions to charitiesSpeakers\n15. Jim Clowrie \n16. David France \n17. Oliver Stanton \n18. Francesca Heptonstall \n19. Salman Khan \n20. Annie Craven \n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 3,
+      "questions": {
+        "from": 21,
+        "to": 23
+      },
+      "content": "Part 3: Questions 21-23\nChoose the correct letter, A, B or C.Presentation on houses of the future\n21. Which aspect of their presentation are Mia and Leo both concerned about?\nA meeting the deadline\nB finding suitable examples\nC including original ideas22. The students decide to focus their assignment on housing for\nA family groups.\nB old people.\nC single people.23. The students agree that demand for accommodation in urban areas should be met by\nA repurposing offices and factories.\nB constructing tall buildings.\nC developing creative ideas for smaller homes.Questions 24-30\nWhat opinion is given about each of the following developments? Choose SEVEN answers from the box and write the correct letter, A-l, next to Questions 24-30.Opinions\nA This could cause unnecessary anxiety.\nB This would be especially beneficial for city residents.\nC This would be challenging for young people.\nD This would have environmental benefits.\nE This could encourage creativity.\nF This could lead to social problems.\nG This could enable retired people to share a project.\nH This would help some people but cause problems for others.\nI This would suit both existing and new members of a household.Developments\n24. use of roof space for gardens \n25. shared working spaces \n26. moveable internal wails \n27. smart mirrors in bathrooms\n28. bike sheds with charging points \n29. restriction of cars to certain areas \n30. communal vegetable plots \n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31 – 40\nComplete the notes below. Write ONE WORD ONLY for each answer.Music therapy for surgical patients\nBackground\n• Surgery impacts patients because they may experience discomfort or unwelcome changes to their (31) \n• Current post-surgical strategies focus mainly on pain relief.Recent research\n• A study reviewed data from about 100 (32)  and found that listening to music\no improved hospital patients’ sense of wellbeing.\no reduced the length of their stay.\n• The patients in the study all listened to music with a (33)  effect.\n• The music was mostly played through music (34) \n• Patients reported an absence or low levels of (35) \n• Medical records confirmed that patients who were played music in hospital needed less (36)  than those who weren’t played music.\n• The best results were achieved when patients were played music while they were (37) \n• The study concluded that playing music was effective because it served as a (38)\n• The researchers recommend playing either music or sounds from (39)  to all surgical patients.\n• A future study will investigate the best (40)  for the music.\n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "Leigh",
+    "2": "Motorbike",
+    "3": "Hairdresser",
+    "4": "Suit",
+    "5": "Laptop",
+    "6": "Monday",
+    "7": "Coffee",
+    "8": "Books",
+    "9": "Plants",
+    "10": "Cinema",
+    "11": "C, E",
+    "12": "C, E",
+    "13": "A, B",
+    "14": "A, B",
+    "15": "C",
+    "16": "G",
+    "17": "D",
+    "18": "A",
+    "19": "F",
+    "20": "B",
+    "21": "B",
+    "22": "A",
+    "23": "B",
+    "24": "B",
+    "25": "E",
+    "26": "I",
+    "27": "A",
+    "28": "D",
+    "29": "H",
+    "30": "G",
+    "31": "Routine",
+    "32": "Trials",
+    "33": "Calming",
+    "34": "Pillows",
+    "35": "Anxiety",
+    "36": "Medication",
+    "37": "Awake",
+    "38": "Distraction",
+    "39": "Nature",
+    "40": "Volume"
+  }
+}

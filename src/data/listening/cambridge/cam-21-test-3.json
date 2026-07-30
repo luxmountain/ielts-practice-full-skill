@@ -1,0 +1,70 @@
+{
+  "type": "cambridge",
+  "book": 21,
+  "test": 3,
+  "title": "Cambridge IELTS 21 Listening Test 3",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10\nComplete the notes below. Write ONE WORD AND/ OR A NUMBER for each answer.Ferry to Shetland Islands\n• Name of ferry company: (1)  Ferries\n• Ferries depart seven times per (2)  in summer\n• Cost for four people with car: a little less than (3) £ \n• Cancellation policy: receive a (4)  (if cancelled a month in advance)Advice\n• Cabins:\no book one with a (5) \no luxury cabins have a TV\n• Bring snacks and (6)  for the children\n• A (7)  is required for the dog kennels\n• Try to see (8)  in the morning\n• If time, visit (9)  Castle\n• The (10)  restaurant in a nearby village is recommended \n\n (adsbygoogle = window.adsbygoogle || []).push({});Part 2: Questions 11 and 12\nChoose TWO letters, A-E.Which TWO explanations for the popularity of street food are given?\nA low price\nB locally sourced\nC freshly made\nD convenience\nE unusual foodQuestions 13 and 14\nChoose TWO letters, A-E.Which TWO places are recommended for new street food businesses?\nA music festivals\nB food markets\nC weddings\nD parties\nE parksQuestions 15 and 16\nChoose the correct letter, A, B or C.15. What does the speaker say about getting equipment for a street food business?\nA High quality equipment is a good investment.\nB It’s best to buy second-hand equipment.\nC Renting equipment can be cheap.16. What advice is given about creating a product for a street food business?\nA Provide information about the ingredients.\nB It is important to have an original product.\nC The presentation is an important factor.Questions 17-20\nWhat problem did the owners of each of the following street food businesses experience? Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 17-20.Problems\nA Some ingredients were too expensive.\nB The meals took a long time to prepare.\nC They had no money for marketing.\nD It was difficult to get a permit to sell food.\nE A competitor was selling similar food in their area.\nF They worked very long hours.Street food businesses\n17. Thai Basil \n18. Basque \n19. Lou’s kitchen \n20. Chip Chop \n\n (adsbygoogle = window.adsbygoogle || []).push({});Part 3: Questions 21 and 22\nChoose TWO letters, A-E.Which TWO points do the speakers make about the terms ‘ethical’ and ‘sustainable’ fashion?A Their definitions keep changing.\nB People think they mean the same thing.\nC The term ‘eco-friendly’ is preferable.\nD They are often used imprecisely.\nE Companies should avoid using them on clothing labels. Questions 23 and 24Choose TWO letters, A-E.Which TWO claims about wool production do the speakers disagree with?A Sheep are generally well-treated.\nB Wool is easy to recycle.\nC Wool is a long-lasting fabric.\nD Wool production involves few chemicals.\nE Sheep do less environmental damage than other livestock.Questions 25-30\nWhat comment do the speakers make about each of the following semi-synthetic fabrics? Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.Comments\nA The production process is fuel efficient.\nB It is the least sustainable of alternative fabrics.\nC Production costs are high.\nD It provides additional health benefits.\nE It is not durable in the long-term.\nF It needs to be produced in a certain way to be sustainable.\nG Chemicals required for production can be reused.\nH This is from a wholly sustainable source.Semi-synthetic fabrics\n25. Lyocell \n26. Cupro \n27. Bamboo \n28 EcoVero \n29. Cork \n30. Hemp \n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31 – 40\nComplete the notes below. Write ONE WORD ONLY for each answer.Invasive species\nDefinition: an animal or plant that causes harm to an environment after being introduced by humans\nAn invasive species can be a problem when it:\n• eats native species\n• introduces a new (31) \n• takes food from native species\n• threatens an entire (32) How invasive species spread\n• accidentally e.g. via people returning from their (33)  or on cargo ships\n• intentionally e.g. for pest control, or as (34)Examples of invasive species\n• Rhinella marina (toads)\no were introduced to Australia from Hawaii in 1935 to eat a type of insect that was damaging the (35)  plantations.\no failed to solve the problem and became widespread in the north of Australia.\no are poisonous for any species that eats them and reduce the food available for native frogs.\n• Japanese knotweed plants were popular among 19th-century gardeners in the UK.\n• Rhododendron plants prevent (36)  from reaching native plants.\n• Grey squirrels from N. America reduce sources of food for the UK’s native red squirrels and spread a (37)  that kills red squirrels.Tackling invasive species\n• Monitoring helps us to understand the (38)  of invasive species and the impact they have.\n• Setting up a national (39)  makes it easier to track them.\n• Asking the public to (40)  and report them helps with monitoring.\n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "Northern",
+    "2": "Week",
+    "3": "250/two hundred fifty",
+    "4": "Voucher",
+    "5": "Window",
+    "6": "Books",
+    "7": "Blanket",
+    "8": "Dolphins",
+    "9": "Drum",
+    "10": "Italian",
+    "11": "C, E",
+    "12": "C, E",
+    "13": "B, E",
+    "14": "B, E",
+    "15": "B",
+    "16": "C",
+    "17": "F",
+    "18": "A",
+    "19": "B",
+    "20": "D",
+    "21": "B, D",
+    "22": "B, D",
+    "23": "D, E",
+    "24": "D, E",
+    "25": "G",
+    "26": "B",
+    "27": "F",
+    "28": "A",
+    "29": "H",
+    "30": "D",
+    "31": "Disease",
+    "32": "Ecosystem",
+    "33": "Holidays",
+    "34": "Pets",
+    "35": "Sugar",
+    "36": "Light",
+    "37": "Virus",
+    "38": "Behaviour/behavior",
+    "39": "Database",
+    "40": "Photograph"
+  }
+}

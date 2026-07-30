@@ -39,6 +39,7 @@ export default function Sidebar() {
     const next = !dark;
     setDark(next);
     document.documentElement.classList.toggle("dark", next);
+    document.documentElement.classList.toggle("light", !next);
     localStorage.setItem("ielts-theme", next ? "dark" : "light");
   };
 

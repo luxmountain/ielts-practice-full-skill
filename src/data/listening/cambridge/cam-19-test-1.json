@@ -1,0 +1,80 @@
+{
+  "type": "cambridge",
+  "book": 19,
+  "test": 1,
+  "title": "Cambridge IELTS 19 Listening Test 1",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.Hinchingbrooke Country ParkThe parkArea: (1)  hectaresHabitats: wetland, grassland and woodlandWetland: lakes, ponds and a (2) Wildlife includes birds, insects and animalsSubjects studied in educational visits includeScience: Children look at (3)  about plants, etc.Geography: includes learning to use a (4)  and compassHistory: changes in land useLeisure and tourism: mostly concentrates on the park’s (5) Music: Children make (6)  with natural materials, and experimentwith rhythm and speed.Benefits of outdoor educational visitsThey give children a feeling of (7)  that they may not have elsewhere.Children learn new (8)  and gain self-confidence.Practical issuesCost per child: (9) £ Adults, such as (10) , free",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 15
+      },
+      "content": "Part 2: Questions 11-15Choose the correct letter, A, B or C.Stanthorpe Twinning Association11. During the visit to Malatte, in France, members especially enjoyedA going to a theme park.B experiencing a river trip.C visiting a cheese factory.12. What will happen in Stanthorpe to mark the 25th anniversary of the Twinning Association?A A tree will be planted.B A garden seat will be bought.C A footbridge will be built.13. Which event raised most funds this year?A the film showB the pancake eveningC the cookery demonstration14. For the first evening with the French visitors host families are advised toA take them for a walk round the town.B go to a local restaurant.C have a meal at home.15. On Saturday evening there will be the chance toA listen to a concert.B watch a match.C take part in a competition.Questions 16-20Label the map below. Write the correct letter, A-H, next to Questions 16-20.<img fetchpriority=\"high\" decoding=\"async\" src=\"/wp-content/uploads/2024/09/lis-test197.png\" alt=\"\" width=\"758\" height=\"639\" />16. Farm shop 17. Disabled entry 18. Adventure playground 19. Kitchen gardens 20. The Temple of the Four Winds Part 3: Questions 21 and 22Choose TWO letters, A-E.Which TWO things did Colin find most satisfying about his bread reuse project?A receiving support from local restaurantsB finding a good way to prevent wasteC overcoming problems in a basic processD experimenting with designs and coloursE learning how to apply 3-D printingQuestions 23 and 24Choose TWO letters, A-E.Which TWO ways do the students agree that touch-sensitive sensors for food labels could be developed in future?A for use on medical productsB to show that food is no longer fit to eatC for use with drinks as well as foodsD to provide applications for blind peopleE to indicate the weight of certain foodsQuestions 25-30What is the students’ opinion about each of the following food trends? Choose SIX answers from the box and write the correct letter, A-H, next to Questions 25-30.OpinionsA This is only relevant to young people.B This may have disappointing results.C This already seems to be widespread.D Retailers should do more to encourage this.E More financial support is needed for this.F Most people know little about this.G There should be stricter regulations about this.H This could be dangerous.Food trends25. Use of local products 26. Reduction in unnecessary packaging 27. Gluten-free and lactose-free food 28. Use of branded products related to celebrity chefs 29. Development of ‘ghost kitchens’ for takeaway food 30. Use of mushrooms for common health concerns",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31-40Complete the notes below. Write ONE WORD ONLY for each answer.Ceide Fields• an important Neolithic archaeological site in the northwest of IrelandDiscovery• In the 1930s, a local teacher realised that stones beneath the bog surface were once (31) • His (32)  became an archaeologist and undertook an investigation of the site:– a traditional method used by local people to dig for (33) was used to identify where stones were located– carbon dating later proved the site was Neolithic.• Items are well preserved in the bog because of a lack of (34) Neolithic farmers• Houses were (35)  in shape and had a hole in the roof.• Neolithic innovations include:– cooking indoors– pots used for storage and to make (36) • Each field at Ceide was large enough to support a big (37) • The fields were probably used to restrict the grazing of animals – no evidence of structures to house them during 38 Reasons for the decline in farming• a decline in (39)  quality• an increase in (40)",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "69/ sixty-nine",
+    "2": "Stream",
+    "3": "Data",
+    "4": "Map",
+    "5": "Visitors",
+    "6": "Sounds",
+    "7": "Freedom",
+    "8": "Skills",
+    "9": "4.95",
+    "10": "Leaders",
+    "11": "B",
+    "12": "A",
+    "13": "B",
+    "14": "C",
+    "15": "A",
+    "16": "G",
+    "17": "C",
+    "18": "B",
+    "19": "D",
+    "20": "A",
+    "21": "B, D",
+    "22": "B, D",
+    "23": "A, E",
+    "24": "A, E",
+    "25": "D",
+    "26": "G",
+    "27": "C",
+    "28": "B",
+    "29": "F",
+    "30": "H",
+    "31": "Walls",
+    "32": "Son",
+    "33": "Fuel",
+    "34": "Oxygen",
+    "35": "Rectangular",
+    "36": "Lamps",
+    "37": "Family",
+    "38": "Winter",
+    "39": "Soil",
+    "40": "Rain"
+  }
+}

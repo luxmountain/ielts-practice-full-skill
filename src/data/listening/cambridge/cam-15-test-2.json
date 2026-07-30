@@ -1,0 +1,80 @@
+{
+  "type": "cambridge",
+  "book": 15,
+  "test": 2,
+  "title": "Cambridge IELTS 15 Listening Test 2",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 4
+      },
+      "content": "Part 1: Questions 1-4Complete the notes below. Write ONE WORD ONLY for each answer.Festival InformationDateType of eventDetails17tha concertperformers from Canada18tha balletcompany called (1)……………19th – 20th (afternoon)a playtype of play; a comedy called Jemima has had a good (2)………………..20th (evening)a (3)…………..showshow is called (4)………………(1) (2) (3) (4) Questions 5-10Complete the notes below. Write ONE WORD ONLY for each answer.Workshops:• Making (5)  food• (children only) making (6) • (adults only) making toys from (7)  using various toolsOutdoor activities• Swimming in the (8) • Walking in the woods, led by an expert on (9) See the festival organisers’ (10)  for more information",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 14
+      },
+      "content": "Part 2: Questions 11-14Choose the correct letter A, B, or C.Minster Park11. The park was originally established A as an amenity provided by the city council B as land belonging to a private house C as a shared area set up by the local community12. Why is there a statue of Diane Gosforth in the park? A she was a resident who helped to lead a campaign B she was a council member responsible for giving the public access C she was a senior worker at the park for many years13. During the first World War the park was mainly used for A exercises by troops B growing vegetables C public meetings14. When did the physical transformation of the park begin? A 203 B 2015 C 2016Questions 15-20Label the map below.<img decoding=\"async\" src=\"/wp-content/uploads/2024/09/lis-test-182.png\" alt=\"\" />15. statue of Diane Gosforth 16. wooden sculptures 17. playground 18. maze 19. tennis courts 20. fitness area Part 3: Questions 21 and 22Choose TWO letters A-E.Which TWO groups of people is the display primarily intended for? A students from the English department B residents of the local area C the university’s teaching staff D potential new students E students from other departmentsQuestions 23 and 24Choose TWO letter A-E.What are Cathy and Graham’s TWO reasons for choosing the novelist Charles Dickens? A his speeches inspired others to try to improve society B he used his publications to draw attention to social problems C his novels are well know now D he was consulted on a number of social issues E his reputation has changed in recent timesQuestions 25-30What topic do Cathy and Graham chose to illustrate with each novel? Choose SIX answers from the list below.TopicsA povertyB educationC Dicken’s travelsD entertainmentE crime and the lawF wealthG medicineH a woman’s lifeNovels by Dickens25. The Pickwick Papers 26. Oliver Twist 27. Nicholas Nickleby 28. Martin Chuzzlewit 29. Bleak House 30. Little Dorrit",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31-40Complete the notes below. Write ONE WORD ONLY for each answer.Agricultural programme in MozambiqueHow the programme was organised• It focused on a dry and arid region in Chicualacuala district near the Limpopo river• People depended on the forest to provide charcoal as a source of income• (31)  was seen as the main priority to ensure the supply of water• Most of the work organised by farmer’s associations was done by (32) • Fenced areas were created to keep animals away from crops• The programme providedo (33)  for the fenceso (34)  for the suitable cropso Water pumps• The farmers providedo Labouro (35)  for the fences on their landFurther developments• The marketing of produce was sometimes difficult due to lack of (36) • Training was therefore provided in methods of food (37) • Farmers made special places where (38)  could be kept• Local people later suggested keeping (39) Evaluation and lessons learned• Agricultural production increased improving incomes and food security• Enough time must be allowed, particularly for the (40)  phase of the programme",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "Eustatis",
+    "2": "Review",
+    "3": "Dance",
+    "4": "Chat",
+    "5": "Healthy",
+    "6": "Posters",
+    "7": "Wood",
+    "8": "Lake",
+    "9": "Insects",
+    "10": "Blog",
+    "11": "C",
+    "12": "A",
+    "13": "B",
+    "14": "C",
+    "15": "E",
+    "16": "C",
+    "17": "B",
+    "18": "A",
+    "19": "G",
+    "20": "D",
+    "21": "B, D",
+    "22": "B, D",
+    "23": "B, C",
+    "24": "B, C",
+    "25": "G",
+    "26": "B",
+    "27": "D",
+    "28": "C",
+    "29": "H",
+    "30": "F",
+    "31": "Irrigation",
+    "32": "Women",
+    "33": "Wire(s)",
+    "34": "Seed(s)",
+    "35": "Posts",
+    "36": "Transport",
+    "37": "Preservation",
+    "38": "Fish(es)",
+    "39": "Bees",
+    "40": "design"
+  }
+}

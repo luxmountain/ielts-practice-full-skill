@@ -1,0 +1,90 @@
+{
+  "type": "cambridge",
+  "book": 11,
+  "test": 3,
+  "title": "Cambridge IELTS 11 Listening Test 3",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10Complete the notes below. Write ONE WORD AND/OR A NUMBER.Enquiry about joining Youth CouncilName: Roger BrownAge: 18Currently staying in a (1)  during the weekPostal address: (2) 17,  Street, Stamford, LincsPostcode: (3) Occupation: student and part time job as a (4) Studying (5)  (major subject) and history (minor subject)Hobbies: does a lot of (6)  , and is interested in the (7) On Youth Council, wants to work with young people who are (8) Will come to talk to the Elections Officer next Monday at (9)  pmMobile number: (10)",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 20
+      },
+      "content": "Part 2: Questions 11-20New staff at theatreQuestions 11 and 12Choose TWO letters A-E.Which TWO changes have been made so far during the refurbishment of the theatre? A Some rooms now have a different use. B A different type of seating has been installed. C An elevator has been installed. D The outside of the building has been repaired. E Extra seats have been added.Questions 13 and 14Choose TWO letters, A-E.Which TWO facilities does the theatre currently offer to the public? A rooms for hire B backstage tours C hire of costumes D a bookshop E a cafeQuestions 15 and 16Choose TWO letters, A-E.Which TWO workshops does the theatre currently offer? A sound B acting C making puppets D make-up E lightingQuestions 17-20Label the plan below. Write the correct letter A-G, next to questions 17-20.<img fetchpriority=\"high\" decoding=\"async\" src=\"/wp-content/uploads/2024/09/lis-test79.png\" alt=\"\" width=\"532\" height=\"515\" />(17)                     (18) (19)                    (20)",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 3,
+      "questions": {
+        "from": 21,
+        "to": 26
+      },
+      "content": "Part 3: Questions 21-26Choose the correct letter A, B or C.Rocky Bay field trip21. What do the students agree should be included in their aims? A factors affecting where organisms live B the need to preserve endangered species C techniques for classifying different organisms22. What equipment did they forget to take on the Field Trip? A string B a compass C a ruler23. In Helen’s procedure section, Colin suggests a change in A the order in which information is given B the way the information is divided up C the amount of information provided24. What do they say about the method they used to measure wave speed? A It provided accurate results B It was simple to carry out C It required special equipment25. What mistake did Helen make when first drawing the map? A She chose the wrong scale B She stood in the wrong place C She did it at the wrong time26. What do they decide to do next with their map? A scan it onto a computer B check it using photographs C add information from the internetQuestions 27 and 28Choose TWO letters A-E.Which TWO problems affecting organisms in the splash zone are mentioned? A lack of water B strong winds C lack of food D high temperatures E large wavesQuestions 29 and 30Choose TWO letters, A-E.Which TWO reasons for possible error will they include in their report? A inaccurate records of the habitat of organisms B influence on behaviour of organisms by observer C incorrect identification of some organisms D making generalisations from a small sample E missing some organisms when counting",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31-40Complete the notes below. Write ONE WORD ONLY.DESIGNING A PUBLIC BUILDING:THE TAYLOR CONCERT HALLIntroductionThe designer of a public building may need to consider the building’s• Function• Physical and (31)  context• Symbolic meaningLocation and concept of the Concert Hall• On the site of a discussed (32) • Beside a (33) • The design is based on the concept of a mysteryBuilding designIt’s approached by a (34)  for pedestriansThe building is the shape of a (35) One exterior wall acts as a large (36) In the auditorium:• The floor is built on huge pads made of (37) • The walls are made of local wood and are (38)  in shape• Ceiling panels and (39)  on walls allow adjustment of acousticsEvaluationSome critics say the (40)  style of building is inappropriate",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "hostel",
+    "2": "Buckleigh",
+    "3": "PE9 7QT",
+    "4": "waiter",
+    "5": "politics",
+    "6": "cycling",
+    "7": "cinema",
+    "8": "disabled",
+    "9": "4.30 pm",
+    "10": "07788136711",
+    "11": "A",
+    "12": "B",
+    "13": "B",
+    "14": "D",
+    "15": "C",
+    "16": "E",
+    "17": "G",
+    "18": "D",
+    "19": "B",
+    "20": "F",
+    "21": "A",
+    "22": "A",
+    "23": "C",
+    "24": "B",
+    "25": "B",
+    "26": "B",
+    "27": "A",
+    "28": "D",
+    "29": "C",
+    "30": "E",
+    "31": "social",
+    "32": "factory",
+    "33": "canal",
+    "34": "bridge",
+    "35": "box",
+    "36": "screen",
+    "37": "rubber",
+    "38": "curved",
+    "39": "curtains",
+    "40": "international"
+  }
+}

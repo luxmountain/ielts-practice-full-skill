@@ -1,0 +1,90 @@
+{
+  "type": "cambridge",
+  "book": 18,
+  "test": 1,
+  "title": "Cambridge IELTS 18 Listening Test 1",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10Complete the notes below. Write ONE WORD AND/ OR A NUMBER for each answer.Transport SurveyName: Sadie JonesYear of birth: 1991Postcode: (1) Traveling by busDate of bus journey: (2) Reason for trip: shopping and visit to the (3) Travelled by bus because cost of (4)  too highGot on bus at (5)  StreetComplaints about bus service bus today was (6) Frequency of buses in the (7) Traveling by carGoes to the (8)  By carTraveling by bicycleDislikes traveling by bike in the city centre because of the (9) Doesn’t own a bike because of a lack of (10)",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 13
+      },
+      "content": "Part 2: Questions 11-13Choose the correct letter, A, B or C.Becoming a volunteer for ACE11. Why does the speaker apologise about the seats?A They are too small.B There are not enough of them.C Some of them are very close together.12. What does the speaker say about the age of volunteers?A The age of volunteers is less important than other factors.B Young volunteers are less reliable than older ones.C Most volunteers are about 60 years old.13. What does the speaker say about training?A It is continuous.B It is conducted by a manager.C It takes place online.Questions 14 and 15Choose TWO letters, A-E. Which TWO issues does the speaker ask the audience to consider before they apply to be volunteers?A their financial situationB their level of commitmentC their work experienceD their ambitionE their availabilityQuestions 16-20What does the speaker suggest would be helpful for each of the following areas of voluntary work? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 16-20.Helpful things volunteers might offerA experience on stageB original, new ideasC parenting skillsD an understanding of food and dietE retail experienceF a good memoryG a good level of fitnessArea of voluntary work16. Fundraising 17. Litter collection 18. ‘Playmates’ 19. Story club 20. First aid",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 3,
+      "questions": {
+        "from": 21,
+        "to": 26
+      },
+      "content": "Part 3: Questions 21-26Choose the correct letter, A, B or C.Talk on Jobs in fashion design21. What problem did Chantal have at the start of the talk?A Her view of the speaker was blocked.B She was unable to find an empty seat.C The students next to her were talking.22. What were Hugo and Chantal surprised to hear about the job market?A It has become more competitive than it used to be.B There is more variety in it than they had realised.C Some areas of it are more exciting than others.23. Hugo and Chantal agree that the speaker’s message wasA unfair to them at times.B hard for them to follow.C critical of the industry.24. What do Huao and Chantal criticise about their school careers advice?A when they received the adviceB how much advice was givenC who gave the advice25. When discussing their future, Hugo and Chantal disagree onA which is the best career in fashion.B when to choose a career in fashion.C why they would like a career in fashion.26. How does Hugo feel about being an unpaid assistant?A He is realistic about the practice.B He feels the practice is dishonest.C He thinks others want to change the practice.Questions 27 and 28Choose TWO letters, A-E. Which TWO mistakes did the speaker admit she made in her first job?A being dishonest to her employerB paying too much attention to how she lookedC expecting to become well-knownD trying to earn a lot of moneyE openly disliking her clientQuestions 29 and 30Choose TWO letters, A-E. Which TWO pieces of retail information do Hugo and Chantal agree would be useful?A the reasons people return fashion itemsB how much time people have to shop for clothesC fashion designs people want but can’t findD the best time of year for fashion buyingE the most popular fashion sizes",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31-40Complete the notes below. Write ONE WORD ONLY for each answer.Elephant translocationReasons for overpopulation at Majete National Park• strict enforcement of anti-poaching laws• successful breedingProblems caused by elephant overpopulation• greater competition, causing hunger for elephants• damage to (31)  in the parkThe translocation process• a suitable group of elephants from the same (32)  was selected• vets and park staff made use of (33)  to help guide the elephants into an open plain• elephants were immobilised with tranquiliserso this process had to be completed quickly to reduce (34) o elephants had to be turned on their (35)  to avoid damage to their lungso elephants’ (36)  had to be monitored constantlyo tracking devices were fitted to the matriarchso data including the size of their tusks and (37)  was taken• elephants were taken by truck to their new reserveAdvantages of translocation at Nkhotakota Wildlife Park• (38)  opportunities• a reduction in the number of poachers and (39) • an example of conservation that other parks can follow• an increase in (40)  as a contributor to GDP",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "DW307YZ",
+    "2": "24(th) April",
+    "3": "Dentist",
+    "4": "Parking",
+    "5": "Claxby",
+    "6": "Late",
+    "7": "Evening",
+    "8": "Supermarket",
+    "9": "Pollution",
+    "10": "Storage",
+    "11": "C",
+    "12": "A",
+    "13": "A",
+    "14": "B, E",
+    "15": "B, E",
+    "16": "B",
+    "17": "G",
+    "18": "D",
+    "19": "A",
+    "20": "F",
+    "21": "A",
+    "22": "B",
+    "23": "A",
+    "24": "C",
+    "25": "B",
+    "26": "A",
+    "27": "B, E",
+    "28": "B, E",
+    "29": "A, C",
+    "30": "A, C",
+    "31": "Fences",
+    "32": "Family",
+    "33": "Helicopters",
+    "34": "Stress",
+    "35": "Sides",
+    "36": "Breathing",
+    "37": "Feet",
+    "38": "Employment",
+    "39": "Weapons",
+    "40": "Tourism"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "type": "cambridge",
+  "book": 20,
+  "test": 2,
+  "title": "Cambridge IELTS 20 Listening Test 2",
+  "sections": [
+    {
+      "number": 1,
+      "questions": {
+        "from": 1,
+        "to": 10
+      },
+      "content": "Part 1: Questions 1-10\nComplete the notes below. Write ONE WORD AND/ OR A NUMBER for each answer.Local councils can arrange practical support to help those caring for elderly people at home.This can give the carer:\n• time for other responsibilities\n• va (1) Assessment of mother’s needs\nThis may include discussion of:\n• how much (2)  the caring involves\n• what types of tasks are involved, e.g.\no help with dressing\no helping her have a (3) \no shopping\no helping with meals\no dealing with (4) \n• any aspects of caring that are especially difficult, e.g.\n• loss of (5) \n• (6)  her\n• preventing a (7) Types of support that may be offered to carers\n• transport costs, e.g. cost of a (8) \n• car-related costs, e.g. fuel and (9) \n• help with housework\n• help to reduce (10) \n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 2,
+      "questions": {
+        "from": 11,
+        "to": 16
+      },
+      "content": "Part 2: Questions 11-16What is the role of the volunteers in each of the following activities? Choose SIX answers from the box and write the correct letter, A-I, next to Questions 11-16.11. walking around the town centre \n12. helping at concerts\n13. getting involved with community groups\n14. helping with a magazine\n15. participating at lunches for retired people\n16. helping with the websiteA providing entertainment\nB providing publicity about a council service\nC contacting local businesses\nD giving advice to visitors\nE collecting feedback on events\nF selling tickets\nG introducing guest speakers at an event\nH encouraging cooperation between local organisations\nI helping people find their seatsQuestions 17 – 20\nChoose the correct letter, A, B or C.17. Which event requires the largest number of volunteers?\nA the music festival\nB the science festival\nC the book festival18. What is the most important requirement for volunteers at the festivals?\nA interpersonal skills\nB personal interest in the event\nC flexibility19. New volunteers will start working in the week beginning\nA 2 September.\nB 9 September.\nC 23 September.20. What is the next annual event for volunteers?\nA a boat trip\nB a barbecue\nC a party",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 3,
+      "questions": {
+        "from": 21,
+        "to": 25
+      },
+      "content": "Part 3: Questions 21-25What is Rosie and Colin’s opinion about each of the following aspects of human geography? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 21-25.Aspects of human geography21. Population \n22. Health \n23. Economies \n24. Culture \n25. Poverty A The information given about this was too vague\nB This may not be relevant to their course.\nC This will involve only a small number of statistics.\nD It will be easy to find facts about this.\nE The facts about this may not be reliable.\nF No useful research has been done on this.\nG The information provided about this was interesting.Questions 26-30\nChoose the correct letter, A, B or C.26. Rosie says that in her own city the main problem is\nA crime.\nB housing.\nC unemployment.27. What recent additions to the outskirts of their cities are both students happy about?\nA conference centres\nB sports centres\nC retail centres28. The students agree that developing disused industrial sites may\nA have unexpected costs.\nB damage the urban environment.\nC destroy valuable historical buildings.29. The students will mention Masdar City as an example of an attempt to achieve\nA daily collections for waste recycling.\nB sustainable energy use.\nC free transport for everyone.30. When discussing the Eco town of Greenhill Abbots, Colin is uncertain about\nA what its objectives were.\nB why there was opposition to it.\nC how much of it has actually been built.\n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    },
+    {
+      "number": 4,
+      "questions": {
+        "from": 31,
+        "to": 40
+      },
+      "content": "Part 4: Questions 31 – 40\nComplete the notes below. Write ONE WORD ONLY for each answer.Developing food trends• The growth in interest in food fashions started with (31)  of food being shared on social media.\n• The UK food industry is constantly developing products which are new or different.\n• Influencers on social media become ‘ambassadors’ for a brand.\n• Sales of (32)  food brands have grown this way.\n• Supermarkets track demand for ingredients on social media.\n• Famous (33)  are influential.Marketing campaigns\n• The avocado:\no (34)  were invited to visit growers in South Africa.\no Advertising focused on its (35)  benefits.• Oat milk:\no A Swedish brand’s media campaign received publicity by upsetting competitors.\no Promotion in the USA through (36)  shops reduced the need for advertising.\no It appealed to consumers who are concerned about the (37) \n• Norwegian skrei:\no has helped strengthen the (38)  of Norwegian seafood.Ethical concerns\n• Quinoa:\no Its success led to an increase in its (39) \no Overuse of resources resulted in poor quality (40) \n\n (adsbygoogle = window.adsbygoogle || []).push({});",
+      "audioUrl": null,
+      "transcript": ""
+    }
+  ],
+  "answers": {
+    "1": "Break",
+    "2": "Time",
+    "3": "Shower",
+    "4": "Money",
+    "5": "Memory",
+    "6": "Lifting",
+    "7": "Fall",
+    "8": "Taxi",
+    "9": "Insurance",
+    "10": "Stress",
+    "11": "D",
+    "12": "I",
+    "13": "H",
+    "14": "E",
+    "15": "A",
+    "16": "B",
+    "17": "B",
+    "18": "A",
+    "19": "B",
+    "20": "A",
+    "21": "D",
+    "22": "G",
+    "23": "B",
+    "24": "A",
+    "25": "E",
+    "26": "C",
+    "27": "A",
+    "28": "A",
+    "29": "B",
+    "30": "C",
+    "31": "Photos/ photographs/ pictures",
+    "32": "Vegan",
+    "33": "Chefs/ cooks",
+    "34": "Journalists/ reporters",
+    "35": "Health",
+    "36": "Coffee",
+    "37": "Environment",
+    "38": "Reputation",
+    "39": "Price/ cost",
+    "40": "Soil"
+  }
+}
