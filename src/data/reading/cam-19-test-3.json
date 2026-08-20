@@ -229,19 +229,19 @@
         {
           "id": 35,
           "answer": "No",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
           "id": 36,
           "answer": "Yes",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
           "id": 37,
           "answer": "No",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
@@ -259,7 +259,7 @@
         {
           "id": 40,
           "answer": "Yes",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         }
       ]

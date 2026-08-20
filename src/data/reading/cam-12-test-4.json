@@ -150,7 +150,7 @@
         {
           "id": 23,
           "answer": "no",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
@@ -162,13 +162,13 @@
         {
           "id": 25,
           "answer": "yes",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
           "id": 26,
           "answer": "yes",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         }
       ]
@@ -223,7 +223,7 @@
         {
           "id": 34,
           "answer": "yes",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
@@ -235,13 +235,13 @@
         {
           "id": 36,
           "answer": "no",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
           "id": 37,
           "answer": "no",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {

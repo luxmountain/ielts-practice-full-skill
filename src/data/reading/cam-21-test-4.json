@@ -132,7 +132,7 @@
         {
           "id": 20,
           "answer": "No",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
@@ -144,13 +144,13 @@
         {
           "id": 22,
           "answer": "Yes",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
           "id": 23,
           "answer": "No",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
@@ -217,7 +217,7 @@
         {
           "id": 33,
           "answer": "No",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {
@@ -235,7 +235,7 @@
         {
           "id": 36,
           "answer": "Yes",
-          "type": "yes-no-ng",
+          "type": "true-false-ng",
           "explanation": ""
         },
         {

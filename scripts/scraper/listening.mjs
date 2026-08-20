@@ -74,46 +74,116 @@ function parseListeningTest(html, meta) {
   const mp3Matches = fullHtml.match(/https?:\/\/[^\s"<]+\.mp3/g) || [];
   mp3Matches.forEach(u => { if (!audioUrls.includes(u)) audioUrls.push(u); });
 
-  // Split by sections
-  const sectionParts = fullHtml.split(/(?=<h3[^>]*>\s*(?:<[^>]*>)*\s*SECTION\s*\d)/i);
-  let sectionNum = 0;
+  // Split by sections. Newer pages ("audio-script-cambridge-ielts-16..." style) use
+  // "PART N" headings instead of the older "SECTION N" wording, and repeat the heading
+  // once inside the audio-player widget and again above the transcript text, so we group
+  // chunks by their captured section number rather than relying on a blind counter.
+  const sectionParts = fullHtml.split(/(?=<h3[^>]*>\s*(?:<[^>]*>)*\s*(?:SECTION|PART)\s*\d)/i);
+  const sectionMap = new Map();
 
   for (const part of sectionParts) {
-    if (!/SECTION\s*\d/i.test(part)) continue;
-    sectionNum++;
+    const headingMatch = part.match(/(?:SECTION|PART)\s*(\d)/i);
+    if (!headingMatch) continue;
+    const num = parseInt(headingMatch[1]);
     const $s = cheerio.load(`<div>${part}</div>`);
-    const section = { number: sectionNum, audioUrl: audioUrls[sectionNum - 1] || null, transcript: "" };
 
     // Get transcript text
     const paras = [];
     $s("p").each((_, el) => {
       const t = $s(el).text().trim();
-      if (t.length > 5 && !/^Advertisements$/i.test(t) && !/Listening Practice Test \d+/i.test(t)) {
+      if (
+        t.length > 5 &&
+        !/^Advertisements$/i.test(t) &&
+        !/Listening Practice Test \d+/i.test(t) &&
+        !/^[-_—\s]+$/.test(t)
+      ) {
         paras.push(t);
       }
     });
-    section.transcript = paras.join("\n\n");
-    if (section.transcript.length > 50) result.sections.push(section);
+
+    const existing = sectionMap.get(num);
+    if (existing) {
+      if (paras.length) existing.push(...paras);
+    } else {
+      sectionMap.set(num, paras);
+    }
   }
 
-  // Extract answers - look for answer section at bottom
-  const answerMatch = fullText.match(/(?:Section\s*1|##### Section 1)([\s\S]*?)$/i);
-  if (answerMatch) {
-    const answerText = answerMatch[0];
-    // Parse individual answers: number followed by answer text
-    const answerLines = answerText.split("\n");
-    let currentSection = 0;
-    for (const line of answerLines) {
-      const secMatch = line.match(/Section\s*(\d)/i);
-      if (secMatch) { currentSection = parseInt(secMatch[1]); continue; }
-      const aMatch = line.trim().match(/^(\d{1,2})\s+(.+)/);
-      if (aMatch) {
-        const qNum = parseInt(aMatch[1]);
-        const answer = aMatch[2].trim();
-        if (qNum >= 1 && qNum <= 40 && answer.length > 0 && answer.length < 100) {
-          result.answers[qNum] = answer;
+  // Extract answers. Newer pages present the answer key as accordion items
+  // (<h5 class="et_pb_toggle_title">Part N</h5><div class="et_pb_toggle_content"><p>ID   answer</p>...)
+  // which also correctly captures "choose two" compound ids like "11&12   A, C".
+  // We prefer this DOM-based extraction and fall back to the older flat-text line scan
+  // (used by pages that still literally say "Section 1" followed by plain "N   answer" lines)
+  // if the DOM approach finds nothing, so previously-working pages keep working.
+  // Also track each section's own min/max question id along the way, to populate the
+  // "questions: {from, to}" field every existing listening JSON file has.
+  let answersFound = 0;
+  const sectionRanges = new Map();
+  content.find("h4, h5, h3").each((_, el) => {
+    const headingText = $(el).text().trim();
+    const m = headingText.match(/^(?:SECTION|PART)\s*(\d)$/i);
+    if (!m) return;
+    const secNum = parseInt(m[1]);
+    let $answerContainer = $(el).next();
+    if (!$answerContainer.hasClass("et_pb_toggle_content")) {
+      $answerContainer = $(el).parent().find(".et_pb_toggle_content").first();
+    }
+    if (!$answerContainer.length) return;
+    $answerContainer.find("p").each((_, pEl) => {
+      const t = $(pEl).text().trim();
+      const am = t.match(/^(\d{1,2})(?:\s*&\s*(\d{1,2}))?\s+(.+)$/);
+      if (!am) return;
+      const answer = am[3].trim();
+      if (!(answer.length > 0 && answer.length < 100)) return;
+      const ids = [parseInt(am[1])];
+      if (am[2]) ids.push(parseInt(am[2]));
+      for (const qNum of ids) {
+        if (qNum >= 1 && qNum <= 40) {
+          result.answers[qNum] = answer; answersFound++;
+          const range = sectionRanges.get(secNum) || { from: qNum, to: qNum };
+          range.from = Math.min(range.from, qNum); range.to = Math.max(range.to, qNum);
+          sectionRanges.set(secNum, range);
         }
       }
+    });
+  });
+
+  if (answersFound === 0) {
+    const answerMatch = fullText.match(/(?:Section\s*1|##### Section 1)([\s\S]*?)$/i);
+    if (answerMatch) {
+      const answerText = answerMatch[0];
+      // Parse individual answers: number followed by answer text
+      const answerLines = answerText.split("\n");
+      let currentSection = 0;
+      for (const line of answerLines) {
+        const secMatch = line.match(/Section\s*(\d)/i);
+        if (secMatch) { currentSection = parseInt(secMatch[1]); continue; }
+        const aMatch = line.trim().match(/^(\d{1,2})\s+(.+)/);
+        if (aMatch) {
+          const qNum = parseInt(aMatch[1]);
+          const answer = aMatch[2].trim();
+          if (qNum >= 1 && qNum <= 40 && answer.length > 0 && answer.length < 100) {
+            result.answers[qNum] = answer;
+          }
+        }
+      }
+    }
+  }
+
+  // Build sections last: the real audioscript text lives in "content" (every existing listening
+  // JSON file under src/data/listening uses this field name — "transcript" is a vestigial field
+  // that's always ""). Writing to "transcript" instead of "content" was the root cause of pages
+  // scraping with populated answers but blank section text.
+  for (const num of [...sectionMap.keys()].sort((a, b) => a - b)) {
+    const sectionContent = sectionMap.get(num).join("\n\n");
+    if (sectionContent.length > 50) {
+      result.sections.push({
+        number: num,
+        questions: sectionRanges.get(num) || null,
+        content: sectionContent,
+        audioUrl: audioUrls[num - 1] || null,
+        transcript: "",
+      });
     }
   }
 
