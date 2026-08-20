@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, PenTool, BarChart3, Home, Settings, ChevronDown, ChevronRight, Menu, X, Sun, Moon } from "lucide-react";
+import { BookOpen, PenTool, Headphones, BarChart3, Home, Settings, ChevronDown, ChevronRight, Menu, X, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
 
 const readingBooks = Array.from({ length: 12 }, (_, i) => ({ book: 21 - i, tests: [1, 2, 3, 4] }));
+const listeningBooks = Array.from({ length: 12 }, (_, i) => ({ book: 21 - i, tests: [1, 2, 3, 4] }));
 const writingTests = Array.from({ length: 99 }, (_, i) => i + 1);
 
 function NavItem({ href, icon, label, active }: { href: string; icon: React.ReactNode; label: string; active?: boolean }) {
@@ -27,6 +28,7 @@ function NavItem({ href, icon, label, active }: { href: string; icon: React.Reac
 export default function Sidebar() {
   const pathname = usePathname();
   const [readingOpen, setReadingOpen] = useState(true);
+  const [listeningOpen, setListeningOpen] = useState(false);
   const [writingOpen, setWritingOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dark, setDark] = useState(false);
@@ -68,6 +70,28 @@ export default function Sidebar() {
                   <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 px-3 py-1">Cambridge {book}</p>
                   {tests.map((test) => (
                     <Link key={`${book}-${test}`} href={`/reading/${book}/${test}`} className={cn("block px-3 py-1 text-xs rounded transition-colors", pathname === `/reading/${book}/${test}` ? "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300" : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800")}>
+                      Test {test}
+                    </Link>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Listening */}
+        <div>
+          <button onClick={() => setListeningOpen(!listeningOpen)} className="flex items-center gap-3 px-3 py-2 rounded-lg text-sm w-full text-left text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 transition-colors">
+            <Headphones className="w-4 h-4" /><span className="flex-1">Listening</span>
+            {listeningOpen ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
+          </button>
+          {listeningOpen && (
+            <div className="ml-4 mt-1 space-y-0.5 max-h-64 overflow-y-auto">
+              {listeningBooks.map(({ book, tests }) => (
+                <div key={book}>
+                  <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 px-3 py-1">Cambridge {book}</p>
+                  {tests.map((test) => (
+                    <Link key={`${book}-${test}`} href={`/listening/${book}/${test}`} className={cn("block px-3 py-1 text-xs rounded transition-colors", pathname === `/listening/${book}/${test}` ? "bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300" : "text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-800")}>
                       Test {test}
                     </Link>
                   ))}

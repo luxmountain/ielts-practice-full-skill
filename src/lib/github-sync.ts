@@ -82,7 +82,7 @@ export async function validateGitHubToken(token: string): Promise<string> {
 }
 
 export function mergeProgress(local: UserProgress, remote: UserProgress): UserProgress {
-  const merged: UserProgress = { reading: { ...local.reading }, writing: { ...local.writing }, lastUpdated: new Date().toISOString() };
+  const merged: UserProgress = { reading: { ...local.reading }, writing: { ...local.writing }, listening: { ...local.listening }, lastUpdated: new Date().toISOString() };
   for (const [key, remoteData] of Object.entries(remote.reading)) {
     const localData = local.reading[key];
     if (!localData || (remoteData.completed && !localData.completed) || new Date(remoteData.date) > new Date(localData.date)) {
@@ -93,6 +93,12 @@ export function mergeProgress(local: UserProgress, remote: UserProgress): UserPr
     const localData = local.writing[key];
     if (!localData || (remoteData.completed && !localData.completed) || new Date(remoteData.date) > new Date(localData.date)) {
       merged.writing[key] = remoteData;
+    }
+  }
+  for (const [key, remoteData] of Object.entries(remote.listening || {})) {
+    const localData = local.listening[key];
+    if (!localData || (remoteData.completed && !localData.completed) || new Date(remoteData.date) > new Date(localData.date)) {
+      merged.listening[key] = remoteData;
     }
   }
   return merged;

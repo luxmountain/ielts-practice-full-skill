@@ -11,10 +11,11 @@ See proposal.md for motivation. Relevant current state:
 - `src/lib/github-sync.ts`'s `mergeProgress` explicitly builds its merged object field-by-field
   (`reading`, `writing`) — it does not spread unknown keys through, so a new `listening` key needs to be
   added there explicitly or sync will silently drop it.
-- `src/data/listening/cambridge/*.json` (46 files, checked directly): `{ type, book, test, title,
-  sections: [{ number, questions: {from, to}, content, audioUrl, transcript }], answers: {"1": "...",
-  ...} }`. `answers` is a flat map keyed by question number as a string, not nested per-section or
-  per-passage the way Reading nests questions inside passages.
+- `src/data/listening/cambridge/*.json` (48 files, all validated - complete sections, complete answers):
+  `{ type, book, test, title, sections: [{ number, questions: {from, to}, content, audioUrl, transcript }],
+  answers: {"1": "...", ...} }`. `answers` is a flat map keyed by question number as a string, not nested
+  per-section or per-passage the way Reading nests questions inside passages. Most files have `audioUrl:
+  null` on every section - accepted as-is; audio is out of scope for this change (see proposal.md - Why).
 - Confirmed via `node_modules/next/dist/docs/01-app/03-api-reference/04-functions/use-params.md` that
   `useParams()` (the client hook Reading's page already uses) is still current in Next.js 16 App Router -
   the new page follows the identical pattern, no new Next.js API surface.
@@ -26,16 +27,19 @@ See proposal.md for motivation. Relevant current state:
   score, explanation toggle, reset) so the app stays visually and behaviorally consistent.
 - Keep `UserProgress` backward-compatible: a user with progress saved before this change (locally or via
   GitHub sync) must not lose data or hit a runtime error.
-- Fix real audio into the dataset so the feature is actually "Listening" practice, not transcript reading.
 
 **Non-Goals:**
+- Audio playback as a tracked feature - the user listens to audio outside the app; the practice page only
+  needs to show section/question text and let the user check their answers. If a section's `audioUrl`
+  happens to be set, a plain `<audio>` control may render as a cosmetic bonus, but this is not validated,
+  not backfilled, and not a requirement.
 - Per-question `explanation` text for listening questions - not present in the source data; the UI
   degrades the same way Reading already does when `explanation` is empty (hides the block).
 - A shared "practice test player" abstraction unifying Reading and Listening pages - out of scope for this
   change; both stay separate pages as Reading already is, to avoid a risky refactor while shipping data +
   UI in the same change. Worth revisiting later if a third practice type is added.
-- Re-scraping listening question content/answers - `listening-pte.mjs`'s output for `content`/`answers` is
-  correct and shouldn't be touched, only `audioUrl` is patched in place.
+- Any scraper changes - `src/data/listening/cambridge/*.json` is already complete and validated; this
+  change only builds UI on top of it.
 
 ## Decisions
 
@@ -47,15 +51,6 @@ Reading's HTML was). Rather than inventing a per-question breakdown the scraped 
 `ListeningSection` and `ListeningTest` types will mirror the JSON exactly as scraped, and the practice page
 will render one answer input per question number in a section's `{from, to}` range, reading/writing that
 answer against the flat `answers` map. This avoids a mismatched type that the real data could never satisfy.
-
-**Fix audio extraction with a source-selector rewrite, not a full re-scrape.** `listening.mjs`'s current
-`a[href$='.mp3']` + regex approach is extension-sensitive (misses book 21's `.MP3`, book 15's `.m4a`).
-Switching to `audio.wp-audio-shortcode source[src]` (verified live against books 10/14/15/17/21, see
-proposal.md) is extension-agnostic since it reads the embed's actual `src` attribute instead of guessing
-from URL text. A separate one-off patch path re-fetches only the ieltstrainingonline.com audioscript page
-per book/test and writes back just the `audioUrl` fields into the existing JSON, rather than re-running the
-full scrape (which pulls from `listening-pte.mjs`/practicepteonline.com and would risk producing different
-`content`/`answers` than what's already been validated on disk).
 
 **`UserProgress` migration happens in `progress-context.tsx`'s load effect, not via a version field.**
 On load, merge the parsed stored object over `defaultProgress` (`{ ...defaultProgress, ...parsed, listening:
@@ -70,14 +65,6 @@ behavior, not introducing a new merge strategy).
 
 ## Risks / Trade-offs
 
-- **[Risk] The `audio.wp-audio-shortcode` selector could still miss an edge case on some untested book.**
-  → Mitigation: the practice page already handles `audioUrl: null` gracefully (visible "audio not
-  available" indicator per the spec's dedicated scenario), so a missed book degrades to "no audio for this
-  test" rather than a broken page; not a blocker for shipping.
-- **[Risk] Patch script re-fetches 46 live pages against ieltstrainingonline.com.** → Mitigation: reuse the
-  existing scraper's rate-limit delay (2-2.5s) unchanged, run once, and only write the `audioUrl` field per
-  section (leave `content`/`transcript`/`answers` untouched) so a partial run can be safely re-run
-  idempotently.
 - **[Risk] Flat `answers` map means a typo'd question number key in scraped JSON silently fails to score
   that question (no type-level guarantee every `{from, to}` number has a matching answer key).** →
   Mitigation: this mirrors a risk Reading already carries in a different shape (already surfaced by the
@@ -89,11 +76,7 @@ behavior, not introducing a new merge strategy).
 1. Land type + `progress-context.tsx` + `github-sync.ts` changes together (all three must move in the same
    commit/PR - a stored-progress migration without the corresponding sync merge update would drop listening
    data on the next GitHub sync).
-2. Land the `listening.mjs` selector fix and the audio-backfill patch script.
-3. Run the patch script once against the existing 46 (soon 48) files.
-4. Land the UI (page, sidebar, dashboard card) last, once real `audioUrl`s are actually in the data - so
-   the feature doesn't ship silently audio-less and then need a second pass.
+2. Land the UI (page, sidebar, dashboard card) on top of that, using the existing validated data as-is.
 
-No rollback complexity: everything is additive to `UserProgress`/`src/lib/types.ts`, and the audio-patch
-script only ever fills a previously-`null` field, so a bad run can't corrupt already-good data beyond
-setting some `audioUrl`s back to `null` (safe to re-run).
+No rollback complexity: everything is additive to `UserProgress`/`src/lib/types.ts`, and no data files are
+modified by this change.

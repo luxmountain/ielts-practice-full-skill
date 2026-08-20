@@ -1,6 +1,6 @@
 "use client";
 
-import { BookOpen, PenTool, Target, Clock } from "lucide-react";
+import { BookOpen, PenTool, Headphones, Target, Clock } from "lucide-react";
 import Link from "next/link";
 import { useProgress } from "@/lib/progress-context";
 
@@ -56,10 +56,11 @@ export default function Dashboard() {
         <p className="text-gray-600 dark:text-gray-400 mt-1">Track your IELTS preparation progress</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
         <StatCard icon={<BookOpen className="w-5 h-5 text-blue-600" />} label="Reading Tests" value={`${stats.readingCompleted}/48`} sublabel="Cambridge 10-21" color="bg-blue-100 dark:bg-blue-900/30" />
+        <StatCard icon={<Headphones className="w-5 h-5 text-cyan-600" />} label="Listening Tests" value={`${stats.listeningCompleted}/48`} sublabel="Cambridge 10-21" color="bg-cyan-100 dark:bg-cyan-900/30" />
         <StatCard icon={<PenTool className="w-5 h-5 text-green-600" />} label="Writing Tests" value={`${stats.writingCompleted}/99`} sublabel="Practice tests" color="bg-green-100 dark:bg-green-900/30" />
-        <StatCard icon={<Target className="w-5 h-5 text-purple-600" />} label="Avg Score" value={stats.avgScore > 0 ? `${stats.avgScore}%` : "—"} sublabel="Reading accuracy" color="bg-purple-100 dark:bg-purple-900/30" />
+        <StatCard icon={<Target className="w-5 h-5 text-purple-600" />} label="Avg Score" value={stats.avgScore > 0 ? `${stats.avgScore}%` : "—"} sublabel="Reading & Listening accuracy" color="bg-purple-100 dark:bg-purple-900/30" />
         <StatCard icon={<Clock className="w-5 h-5 text-orange-600" />} label="Time Spent" value={stats.totalTime > 0 ? formatTime(stats.totalTime) : "0h"} sublabel="Total practice time" color="bg-orange-100 dark:bg-orange-900/30" />
       </div>
 
@@ -72,11 +73,16 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <Link href="/reading/15/1" className="bg-blue-600 hover:bg-blue-700 text-white rounded-xl p-5 transition-colors">
           <BookOpen className="w-6 h-6 mb-2" />
           <h3 className="font-semibold text-lg">Start Reading Practice</h3>
           <p className="text-blue-100 text-sm mt-1">Cambridge IELTS Reading Tests</p>
+        </Link>
+        <Link href="/listening/15/1" className="bg-cyan-600 hover:bg-cyan-700 text-white rounded-xl p-5 transition-colors">
+          <Headphones className="w-6 h-6 mb-2" />
+          <h3 className="font-semibold text-lg">Start Listening Practice</h3>
+          <p className="text-cyan-100 text-sm mt-1">Cambridge IELTS Listening Tests</p>
         </Link>
         <Link href="/writing/10" className="bg-green-600 hover:bg-green-700 text-white rounded-xl p-5 transition-colors">
           <PenTool className="w-6 h-6 mb-2" />

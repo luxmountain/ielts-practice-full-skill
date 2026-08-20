@@ -1,7 +1,9 @@
 ## Purpose
 
-Lets a user browse, play, and answer Cambridge IELTS Listening tests (books 10-21) inside the app, with
-their scores and answers saved across sessions, the same way Reading practice already works.
+Lets a user browse and answer Cambridge IELTS Listening tests (books 10-21) inside the app - working
+through each section's questions and checking against the correct answers - with their scores and answers
+saved across sessions, the same way Reading practice already works. Audio playback is not part of this
+capability; users source and listen to the audio themselves outside the app.
 
 ## ADDED Requirements
 
@@ -12,21 +14,6 @@ sidebar navigation and the dashboard, following the same book/test grouping alre
 #### Scenario: Opening a listening test from the sidebar
 - **WHEN** the user expands the Listening section in the sidebar and selects a book and test number
 - **THEN** the system navigates to that test's practice page and loads its questions
-
-### Requirement: Section audio playback
-The system SHALL provide an audio player for each section of a listening test that has a recorded audio
-source, and SHALL clearly indicate when a section has no audio source available instead of showing a
-broken or silent player.
-
-#### Scenario: Playing a section with available audio
-- **WHEN** the user opens a listening test whose section has an audio source
-- **THEN** the system shows a playable audio control for that section and the user can play, pause, and
-  seek within it
-
-#### Scenario: Section without audio
-- **WHEN** the user opens a section that has no recorded audio source
-- **THEN** the system shows a visible "audio not available" indicator for that section instead of a
-  non-functional player, and still lets the user read the section content and answer its questions
 
 ### Requirement: Answer entry and scoring
 The system SHALL let the user enter an answer for each question in a listening test, submit the test once,

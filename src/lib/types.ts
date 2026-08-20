@@ -20,6 +20,23 @@ export interface ReadingTest {
   passages: ReadingPassage[];
 }
 
+export interface ListeningSection {
+  number: number;
+  questions: { from: number; to: number };
+  content: string;
+  audioUrl: string | null;
+  transcript: string;
+}
+
+export interface ListeningTest {
+  type: string;
+  book: number;
+  test: number;
+  title: string;
+  sections: ListeningSection[];
+  answers: Record<string, string>;
+}
+
 export interface WritingTask {
   instruction: string;
   description?: string;
@@ -44,6 +61,16 @@ export interface ReadingProgress {
   answers: Record<number, string>;
 }
 
+export interface ListeningProgress {
+  completed: boolean;
+  score: string;
+  totalQuestions: number;
+  correctAnswers: number;
+  date: string;
+  timeSpent: number;
+  answers: Record<number, string>;
+}
+
 export interface WritingProgress {
   completed: boolean;
   date: string;
@@ -55,5 +82,6 @@ export interface WritingProgress {
 export interface UserProgress {
   reading: Record<string, ReadingProgress>;
   writing: Record<string, WritingProgress>;
+  listening: Record<string, ListeningProgress>;
   lastUpdated: string;
 }

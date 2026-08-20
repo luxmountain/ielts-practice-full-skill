@@ -1,19 +1,16 @@
 ## Why
 
-Cambridge IELTS Listening data for books 10-21 already exists as JSON (`src/data/listening/cambridge/`,
-46 of 48 tests, with 2 more being scraped separately), but the app has no way to actually practice
-Listening: no route, no types, no progress tracking, and no audio player. The Reading feature is fully
-built (route, types, LocalStorage progress); Listening is data with no product on top of it. Users who
-want to practice Listening alongside Reading (the original ask) currently can't.
+Cambridge IELTS Listening data for books 10-21 now exists as complete, validated JSON
+(`src/data/listening/cambridge/`, all 48 tests, correct section content and answer keys), but the app has
+no way to actually practice Listening: no route, no types, no progress tracking. The Reading feature is
+fully built (route, types, LocalStorage progress); Listening is data with no product on top of it. Users
+who want to practice Listening alongside Reading (the original ask) currently can't.
 
-Separately, an investigation into the existing Listening JSON found that all 46 files have `audioUrl: null`
-on every section — not because no audio exists, but because of two scraper bugs: (1) the data on disk was
-actually produced by `listening-pte.mjs` (scrapes practicepteonline.com), which hardcodes `audioUrl: null`
-and never attempts extraction, while the intended `listening.mjs` (scrapes ieltstrainingonline.com, which
-does embed real per-section `<audio class="wp-audio-shortcode">` tags) was never the one that ran; and
-(2) `listening.mjs`'s own extraction selector only matches lowercase `.mp3` links, missing book 21's
-`.MP3` and book 15's `.m4a`. A Listening practice feature without playable audio would just be a
-transcript-reading exercise, not Listening practice, so fixing audio extraction is in scope here too.
+Audio playback is explicitly out of scope: the user will source and listen to the actual audio themselves
+separately. What they need from the app is correct test data they can work through - section prompts,
+question text, and answers to check against - the same way Reading already works. (Most of the 48
+Listening files still have `audioUrl: null` per section - this is a known, accepted gap, not a defect to
+fix here.)
 
 ## What Changes
 
@@ -27,26 +24,21 @@ transcript-reading exercise, not Listening practice, so fixing audio extraction 
 - Add `updateListeningProgress` / `getListeningProgress` to `progress-context.tsx` and fold listening stats
   (completed count, avg score, time) into the existing `stats` object consumed by the dashboard.
 - Add `src/app/listening/[book]/[test]/page.tsx`: a test-taking page modeled on
-  `src/app/reading/[book]/[test]/page.tsx` — section tabs (instead of passage tabs), an `<audio>` player per
-  section (falls back to a "no audio available" note if `audioUrl` is still null for a given file),
-  fill-in-the-blank answer inputs keyed by question number, submit/score/reset, and explanation toggle
-  (explanations are not present in the current data, so this starts empty/hidden, same graceful behavior
-  Reading already has for missing explanations).
+  `src/app/reading/[book]/[test]/page.tsx` — section tabs (instead of passage tabs), fill-in-the-blank
+  answer inputs keyed by question number, submit/score/reset, and explanation toggle (explanations are not
+  present in the current data, so this starts empty/hidden, same graceful behavior Reading already has for
+  missing explanations). If a section's `audioUrl` happens to be non-null, render a plain `<audio>` control
+  for it as a bonus - purely cosmetic, not a tracked requirement, and a no-op when absent (the common case
+  today).
 - Add a Listening section to `src/components/Sidebar.tsx` (collapsible book/test list, same pattern as
   Reading/Writing) and a Listening stat card + quick-start link on `src/app/page.tsx`.
-- Fix `scripts/scraper/listening.mjs` audio extraction to read `audio.wp-audio-shortcode source[src]`
-  (falling back to the shortcode's wrapped `<a href>`) instead of guessing at link text/extension — this
-  is extension-agnostic and was verified live against books 10/14/15/17/21.
-- Add a small one-off patch script (or a `--patch-audio-only` mode on `listening.mjs`) to backfill the
-  corrected `audioUrl` into the 46 (soon 48) already-scraped JSON files in place, without touching their
-  existing `content`/`answers`, since those were scraped correctly by `listening-pte.mjs` and shouldn't be
-  re-fetched and risk drifting.
 
 ## Capabilities
 
 ### New Capabilities
 - `listening-practice`: End-to-end Listening practice — data types, LocalStorage progress tracking, the
-  test-taking UI with audio playback, and navigation/dashboard integration for Cambridge books 10-21.
+  test-taking UI, and navigation/dashboard integration for Cambridge books 10-21. Audio playback is not
+  part of this capability's tracked behavior.
 
 ### Modified Capabilities
 (none — no existing capability specs are being changed; Reading/Writing behavior is untouched)
@@ -56,10 +48,8 @@ transcript-reading exercise, not Listening practice, so fixing audio extraction 
 - **Data shape**: `src/lib/types.ts` gains `ListeningTest`, `ListeningSection`, `ListeningProgress`; `UserProgress`
   gains a `listening` field. Must stay backward-compatible for progress already saved by real users — see
   migration note above and in `design.md`.
-- **Scraper**: `scripts/scraper/listening.mjs` audio-extraction logic changes (selector fix, verified
-  against Next.js-unrelated static HTML from ieltstrainingonline.com — not a Next.js concern). A new
-  patch/backfill path touches the 46 existing `src/data/listening/cambridge/*.json` files in place
-  (audioUrl field only).
+- **Scraper**: none. No scraper changes in this change - the existing `src/data/listening/cambridge/*.json`
+  files are used as-is.
 - **UI/app-router**: New route `src/app/listening/[book]/[test]`. Confirmed against
   `node_modules/next/dist/docs/` that dynamic route params and client-component data loading follow the
   same pattern already used by `src/app/reading/[book]/[test]/page.tsx` (Next.js 16, App Router) — no new
