@@ -6,6 +6,7 @@ import { Clock, CheckCircle2, XCircle, Eye, EyeOff, RotateCcw, ChevronLeft, Chev
 import { cn } from "@/lib/utils";
 import { useProgress } from "@/lib/progress-context";
 import { ListeningTest } from "@/lib/types";
+import { FormattedContent } from "@/lib/format-content";
 
 export default function ListeningPracticePage() {
   const params = useParams();
@@ -148,7 +149,7 @@ export default function ListeningPracticePage() {
             <audio controls src={section.audioUrl} className="w-full mb-4" />
           )}
           <div className="prose prose-sm dark:prose-invert max-w-none">
-            {section.content.split("\n\n").map((para, i) => <p key={i} className="mb-3 text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">{para}</p>)}
+            <FormattedContent text={section.content} paragraphClassName="mb-3 text-gray-700 dark:text-gray-300 leading-relaxed" />
           </div>
         </div>
 

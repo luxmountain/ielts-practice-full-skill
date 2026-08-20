@@ -31,6 +31,36 @@ async function fetchPage(url, retries = 3) {
   try { const res = await fetch(url); if (!res.ok || !res.body) return false; await pipeline(res.body, createWriteStream(filepath)); return true; } catch { return false; }
 }
 
+// Same convention as scripts/scraper/reading.mjs: walk child nodes and emit "**bold**"/"- item" markers
+// only from real <strong>/<b>/<em>/<i>/<li> source tags, never inferred from text, so formatting survives
+// without ever needing to inject raw HTML back into the app.
+function nodeToMarkup($, el) {
+  let out = "";
+  $(el).contents().each((_, node) => {
+    if (node.type === "text") { out += node.data; }
+    else if (node.type === "tag") {
+      const tag = node.tagName?.toLowerCase();
+      if (tag === "strong" || tag === "b" || tag === "em" || tag === "i") {
+        const inner = nodeToMarkup($, node).trim();
+        if (inner) out += `**${inner}**`;
+      } else if (tag === "br") { out += "\n"; }
+      else { out += nodeToMarkup($, node); }
+    }
+  });
+  return out;
+}
+
+function listToMarkup($, el) {
+  const lines = [];
+  $(el).children("li").each((_, li) => { const t = nodeToMarkup($, li).trim(); if (t) lines.push(`- ${t}`); });
+  return lines.join("\n");
+}
+
+function blockMarkup($, el) {
+  const tag = el.tagName?.toLowerCase();
+  return tag === "ul" || tag === "ol" ? listToMarkup($, el) : nodeToMarkup($, el).trim();
+}
+
 function parseWritingTest(html, testNum) {
   const $ = cheerio.load(html);
   const result = { testNumber: testNum, task1: { instruction: "You should spend about 20 minutes on this task.", description: "", imageUrl: null, sampleAnswer: "" }, task2: { instruction: "You should spend about 40 minutes on this task.", prompt: "", sampleAnswer: "" } };
@@ -43,7 +73,7 @@ function parseWritingTest(html, testNum) {
     const $t1 = cheerio.load(`<div>${t1Html}</div>`);
     const bolds = []; $t1("strong, b").each((_, el) => { const t = $t1(el).text().trim(); if (t.length > 20 && !/WRITING TASK|Write at least|You should spend/i.test(t)) bolds.push(t); });
     result.task1.description = bolds.join("\n\n") || "";
-    if (!result.task1.description) { const ps = []; $t1("p").each((_, el) => { const t = $t1(el).text().trim(); if (t.length > 20 && !/WRITING TASK|You should spend|Write at least/i.test(t)) ps.push(t); }); result.task1.description = ps.join("\n\n"); }
+    if (!result.task1.description) { const ps = []; $t1("p, ul, ol").each((_, el) => { const t = $t1(el).text().trim(); if (t.length > 20 && !/WRITING TASK|You should spend|Write at least/i.test(t)) { const m = blockMarkup($t1, el); if (m) ps.push(m); } }); result.task1.description = ps.join("\n\n"); }
     const img = $t1("img").first(); if (img.length) result.task1.imageUrl = img.attr("src") || img.attr("data-src") || null;
   }
 
@@ -58,7 +88,12 @@ function parseWritingTest(html, testNum) {
   if (sampleStart >= 0) {
     const sampleHtml = fullHtml.slice(sampleStart);
     const $s = cheerio.load(`<div>${sampleHtml}</div>`);
-    const sText = $s("div").text();
+    // `$s("div")` matches every <div> in the wrapper's subtree, not just the outer wrapper - calling
+    // `.text()` on that multi-element collection concatenates each matched div's own (already-nested)
+    // text, so a wrapper containing nested <div>s duplicated the sample answer once per nesting level
+    // (the root cause of task2.sampleAnswer showing up 3-4x). `.first()` selects only the outermost
+    // wrapper div, whose text already includes every descendant's text exactly once.
+    const sText = $s("div").first().text();
     const st1 = sText.search(/WRITING\s*TASK\s*1/i), st2 = sText.search(/WRITING\s*TASK\s*2/i);
     if (st1 >= 0 && st2 >= 0) { result.task1.sampleAnswer = sText.slice(st1 + 14, st2).trim(); result.task2.sampleAnswer = sText.slice(st2 + 14).replace(/Advertisements.*/s, "").trim(); }
     else { const ps = []; $s("p").each((_, el) => { const t = $s(el).text().trim(); if (t.length > 30 && !/SAMPLE ANSWER|Advertisements/i.test(t)) ps.push(t); }); const mid = Math.ceil(ps.length * 0.35); result.task1.sampleAnswer = ps.slice(0, mid).join("\n\n"); result.task2.sampleAnswer = ps.slice(mid).join("\n\n"); }

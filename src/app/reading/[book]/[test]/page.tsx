@@ -6,6 +6,7 @@ import { Clock, CheckCircle2, XCircle, Eye, EyeOff, RotateCcw, ChevronLeft, Chev
 import { cn } from "@/lib/utils";
 import { useProgress } from "@/lib/progress-context";
 import { ReadingTest } from "@/lib/types";
+import { FormattedContent } from "@/lib/format-content";
 
 export default function ReadingPracticePage() {
   const params = useParams();
@@ -80,7 +81,7 @@ export default function ReadingPracticePage() {
   const passage = data.passages[currentPassage];
   const allQuestions = data.passages.flatMap((p) => p.questions);
   const totalAnswered = Object.keys(answers).length;
-  let score = { correct: 0, total: allQuestions.length };
+  const score = { correct: 0, total: allQuestions.length };
   if (submitted) { for (const q of allQuestions) { if ((answers[q.id] || "").trim().toLowerCase() === q.answer.trim().toLowerCase()) score.correct++; } }
 
   return (
@@ -124,7 +125,7 @@ export default function ReadingPracticePage() {
         <div className="bg-white dark:bg-gray-800 rounded-xl border dark:border-gray-700 p-6 max-h-[calc(100vh-280px)] overflow-y-auto">
           <h2 className="text-xl font-bold mb-4">{passage.title}</h2>
           <div className="prose prose-sm dark:prose-invert max-w-none">
-            {passage.content.split("\n\n").map((para, i) => <p key={i} className="mb-3 text-gray-700 dark:text-gray-300 leading-relaxed">{para}</p>)}
+            <FormattedContent text={passage.content} paragraphClassName="mb-3 text-gray-700 dark:text-gray-300 leading-relaxed" />
           </div>
         </div>
 

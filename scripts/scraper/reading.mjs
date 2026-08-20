@@ -27,6 +27,36 @@ async function fetchPage(url, retries = 3) {
   return null;
 }
 
+// Walk an element's child nodes, converting <strong>/<b>/<em>/<i> runs into "**bold**" markers and
+// preserving plain text, instead of flattening everything with bare .text() (which drops HTML structure
+// entirely - the reason paragraphs used to run together with zero separator when two <p> tags' .text()
+// output got joined with nothing between them at a caller that forgot the join, or joined correctly but
+// lost the emphasis inside each paragraph). Markers are only ever emitted from real source tags, never
+// inferred from text content, so a literal "**" can't appear in scraped prose.
+function nodeToMarkup($, el) {
+  let out = "";
+  $(el).contents().each((_, node) => {
+    if (node.type === "text") { out += node.data; }
+    else if (node.type === "tag") {
+      const tag = node.tagName?.toLowerCase();
+      if (tag === "strong" || tag === "b" || tag === "em" || tag === "i") {
+        const inner = nodeToMarkup($, node).trim();
+        if (inner) out += `**${inner}**`;
+      } else if (tag === "br") { out += "\n"; }
+      else { out += nodeToMarkup($, node); }
+    }
+  });
+  return out;
+}
+
+// Convert a <ul>/<ol> element into "- item" lines (one per <li>), using nodeToMarkup for each item's
+// inline content so bold/emphasis inside list items is preserved too.
+function listToMarkup($, el) {
+  const lines = [];
+  $(el).children("li").each((_, li) => { const t = nodeToMarkup($, li).trim(); if (t) lines.push(`- ${t}`); });
+  return lines.join("\n");
+}
+
 function parseReadingTest(html, book, test) {
   const $ = cheerio.load(html);
   const result = { book, test, title: `Cambridge IELTS ${book} Reading Test ${test}`, passages: [] };
@@ -57,7 +87,15 @@ function parseReadingTest(html, book, test) {
     // passage.content. Also treat these common IELTS instruction/legend openers as the start of the
     // questions section.
     const questionsHeaderRe = /^Questions?\s*\d|^(Complete|Choose|Do the following|Look at|Which of|Match |Classify|Label|Reading Passage \d has)\b/i;
-    $p("p").each((_, el) => { const t = $p(el).text().trim(); if (questionsHeaderRe.test(t) && !/^You should spend/i.test(t)) hitQ = true; if (!hitQ && t.length > 15) { const c = t.replace(/\s*\(Q\d+.*?\)/g, "").replace(/READING PASSAGE\s*\d/i, "").trim(); if (c.length > 15 && !/^You should spend/i.test(c)) paras.push(c); } });
+    $p("p, ul, ol").each((_, el) => {
+      const t = $p(el).text().trim();
+      if (questionsHeaderRe.test(t) && !/^You should spend/i.test(t)) hitQ = true;
+      if (hitQ || t.length <= 15) return;
+      const tag = el.tagName?.toLowerCase();
+      const markup = tag === "ul" || tag === "ol" ? listToMarkup($p, el) : nodeToMarkup($p, el).trim();
+      const c = markup.replace(/\s*\(Q\d+.*?\)/g, "").replace(/READING PASSAGE\s*\d/i, "").trim();
+      if (c.length > 15 && !/^You should spend/i.test(c)) paras.push(c);
+    });
     passage.content = paras.join("\n\n");
     // The last passage's "part" slice runs through the end of the document, which (on newer pages)
     // includes the trailing toggle-box answer key for ALL passages. Cut that off before running the
@@ -153,6 +191,71 @@ function extractAnswers(html) {
   return questions.filter((q) => { if (seen.has(q.id)) return false; seen.add(q.id); return true; }).sort((a, b) => a.id - b.id);
 }
 
+// Older Cambridge books (~10-15) link a separate "View Answers with Explanations" page from the bottom
+// of the practice page (confirmed live on practice-cam-13-reading-test-01-with-answer, linking to
+// cambridge-ielts-13-reading-test-1-answers-with-explanations/). Newer books (16+) have no such link at
+// all - that's a genuine source-content gap, not something to work around.
+function findExplanationsUrl($, content) {
+  let url = null;
+  content.find("a[href]").each((_, el) => {
+    const href = $(el).attr("href") || "";
+    const text = $(el).text().trim();
+    if (/answers-with-explanations|answers-and-explanations/i.test(href) || /explanations/i.test(text)) {
+      url = href.startsWith("http") ? href : `${BASE_URL}${href}`;
+      return false;
+    }
+  });
+  return url;
+}
+
+// The explanations page is a flat list of "N. <bare answer>" headings, some (not all) followed by
+// several paragraphs of reasoning before the next "N." heading. Only the reasoning paragraphs (never the
+// bare "N. answer" line itself, which would just be a redundant echo of what's already stored on the
+// question) become the explanation text - a question with no reasoning paragraphs on this page keeps
+// explanation: "".
+function parseExplanationsPage(html) {
+  const $ = cheerio.load(html);
+  const content = $(".entry-content");
+  if (!content.length) return {};
+  const fullHtml = content.html() || "";
+  const lines = fullHtml.replace(/<[^>]+>/g, "\n").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").split("\n").map((l) => l.trim())
+    .filter((l) => l && !/^Advertisements?$/i.test(l) && !/adsbygoogle/i.test(l));
+  const map = {};
+  let currentId = null, buf = [];
+  const flush = () => { if (currentId !== null) { const text = buf.join(" ").replace(/\s+/g, " ").replace(/\s+([,.!?;:”])/g, "$1").trim(); if (text) map[currentId] = text; } buf = []; };
+  for (const line of lines) {
+    const m = line.match(/^(\d{1,2})\.\s*(.*)$/);
+    const id = m ? parseInt(m[1]) : NaN;
+    if (m && id >= 1 && id <= 40) { flush(); currentId = id; continue; }
+    if (currentId !== null) buf.push(line);
+  }
+  flush();
+  return map;
+}
+
+// Follows the explanations link discovered on the practice page (if any), fetches it, and merges
+// explanation text into the matching ReadingQuestion by id. No-op (and no extra request) when the
+// practice page has no such link.
+async function augmentWithExplanations(data, html) {
+  const $ = cheerio.load(html);
+  const content = $(".entry-content");
+  if (!content.length) return;
+  const explUrl = findExplanationsUrl($, content);
+  if (!explUrl) return;
+  await sleep(DELAY_MS);
+  console.log(`  ⟳ Fetching explanations: ${explUrl}`);
+  const explHtml = await fetchPage(explUrl);
+  if (!explHtml) return;
+  const map = parseExplanationsPage(explHtml);
+  let filled = 0;
+  for (const passage of data.passages) {
+    for (const q of passage.questions) {
+      if (map[q.id]) { q.explanation = map[q.id]; filled++; }
+    }
+  }
+  console.log(`  ✓ ${filled} explanations`);
+}
+
 // The site restructured URLs for the Divi redesign: "practice-cam-{book}-reading-test-{padded}-with-answer/"
 // now exists for ALL books 10-20 per the live post-sitemap.xml (confirmed 2026-08-20, e.g.
 // https://ieltstrainingonline.com/practice-cam-13-reading-test-01-with-answer/), not just 16+ as
@@ -208,6 +311,7 @@ async function scrapeAll(targetBook, targetTest) {
       console.log(`  Found: ${url}`);
       const qc = data.passages.reduce((s, p) => s + p.questions.length, 0);
       console.log(`  ✓ ${data.passages.length} passages, ${qc} questions`);
+      await augmentWithExplanations(data, html);
       writeFileSync(outFile, JSON.stringify(data, null, 2)); scraped++; await sleep(DELAY_MS);
     }
   }

@@ -6,6 +6,7 @@ import { Clock, Save, Eye, EyeOff, RotateCcw, AlertCircle, CheckCircle2, Columns
 import { cn } from "@/lib/utils";
 import { useProgress } from "@/lib/progress-context";
 import { WritingTest } from "@/lib/types";
+import { FormattedContent } from "@/lib/format-content";
 
 type ActiveTask = "task1" | "task2";
 
@@ -131,8 +132,8 @@ export default function WritingPracticePage() {
         <div className="space-y-4">
           <div className="bg-white dark:bg-gray-800 rounded-xl border dark:border-gray-700 p-5">
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{currentTask.instruction}</p>
-            {currentTask.description && <p className="font-medium mb-2">{currentTask.description}</p>}
-            {currentTask.prompt && <p className="font-medium">{currentTask.prompt}</p>}
+            {currentTask.description && <div className="font-medium mb-2"><FormattedContent text={currentTask.description} /></div>}
+            {currentTask.prompt && <div className="font-medium"><FormattedContent text={currentTask.prompt} /></div>}
             {currentTask.imageUrl && <img src={currentTask.imageUrl} alt="Task visual" className="mt-3 max-w-full rounded-lg border" />}
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">Write at least {minWords} words.</p>
           </div>
@@ -156,7 +157,7 @@ export default function WritingPracticePage() {
           <div className="bg-white dark:bg-gray-800 rounded-xl border dark:border-gray-700 p-5 max-h-[calc(100vh-280px)] overflow-y-auto">
             <h3 className="font-semibold mb-3 text-purple-700 dark:text-purple-300">Sample Answer (Band 8-9)</h3>
             <div className="prose prose-sm dark:prose-invert max-w-none">
-              {(currentTask.sampleAnswer || "Sample not available").split("\n\n").map((para, i) => <p key={i} className="mb-3 text-gray-700 dark:text-gray-300 leading-relaxed">{para}</p>)}
+              <FormattedContent text={currentTask.sampleAnswer || "Sample not available"} paragraphClassName="mb-3 text-gray-700 dark:text-gray-300 leading-relaxed" />
             </div>
             <p className="mt-4 text-xs text-gray-500">Word count: {wordCount(currentTask.sampleAnswer || "")}</p>
           </div>
