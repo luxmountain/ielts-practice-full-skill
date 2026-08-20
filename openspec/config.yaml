@@ -1,0 +1,35 @@
+schema: spec-driven
+
+context: |
+  IELTS Practice Hub - personal IELTS Reading & Writing practice platform.
+  Tech stack: Next.js 16 (App Router, Turbopack) + React 19 + TypeScript + Tailwind CSS v4.
+  Next.js 16 has breaking API changes vs. training data - before writing any Next.js-specific
+  code (routing, data fetching, config), read the matching guide in node_modules/next/dist/docs/.
+  No backend/database: content lives as static JSON under src/data/{reading,writing,listening}/,
+  shaped by the types in src/lib/types.ts (ReadingTest, WritingTest, UserProgress, etc.).
+  User progress persists in LocalStorage via src/lib/progress-context.tsx, with optional
+  push/pull sync to a user's own GitHub repo via src/lib/github-sync.ts (PAT-based, no server).
+  Content is produced by Cheerio scrapers in scripts/scraper/*.mjs (reading, writing, listening,
+  speaking, plus *-pte variants) that scrape ieltstrainingonline.com with a rate-limit delay
+  (2-2.5s) built in - never remove or shrink that delay when touching scraper code.
+  Routing: src/app/reading/[book]/[test], src/app/writing/[testNumber], src/app/stats,
+  src/app/settings. Shared UI in src/components/. Lint via `next lint` / eslint.config.mjs
+  (eslint-config-next core-web-vitals + typescript).
+
+rules:
+  proposal:
+    - "State whether the change touches scraper scripts, the JSON data shape (src/lib/types.ts), or only UI/app-router code - each carries different risk (scraper - site markup drift and rate limits; data shape - must stay backward-compatible with JSON already in src/data/)."
+    - "Note any Next.js 16 API being introduced or relied on, and confirm it was checked against node_modules/next/dist/docs/."
+  design:
+    - "If UserProgress, ReadingProgress, or WritingProgress in src/lib/types.ts changes shape, describe the migration for progress already stored in a user's LocalStorage/GitHub sync."
+  tasks:
+    - "Include a manual verification step in the browser (dev server) for any UI-facing change - this repo has no automated UI/e2e tests today."
+
+operations:
+  apply:
+    guidance:
+      - "Run `npm run lint` before considering implementation tasks done."
+      - "For scraper changes, dry-run against a single book/test (e.g. `--book 15 --test 1`) before assuming a full run is safe."
+  archive:
+    guidance:
+      - "Confirm the change's spec deltas were merged into openspec/specs/ and still match src/lib/types.ts and the actual routes under src/app/."
